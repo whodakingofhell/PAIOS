@@ -18,16 +18,20 @@ related:
 
 # AI Context Policy
 
+## Manifest
+
+`00 - System/Config/ai-context-manifest.yaml` defines all load bundles by tag. AGENTS.md routes through it, not by hardcoded paths.
+
 ## Tiers
 
 - Tier 0: `AGENTS.md`, `me.md`.
-- Tier 1: root context or one active project's context.
+- Tier 1: root context or one active project's context (load from manifest).
 - Tier 2: task-specific authority or instruction.
 - Tier 3: architecture history, changelog slices, reports, state, archives, or troubleshooting evidence.
 
 ## Progressive Loading
 
-Classify the task, inspect an MOC, search within a bounded scope, read only the relevant section, and stop when enough evidence exists.
+Classify the task, inspect the manifest for matching tags, load the MOC for that area, search within bounded scope, read only the relevant section, stop when enough evidence exists.
 
 ## Access
 

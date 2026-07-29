@@ -227,3 +227,19 @@ Privacy level: Restricted
 Failure behavior: Preserve source; report partial results  
 Last validated: Not validated  
 Instructions: Inventory read-only; exclude generated raw data from normal AI context and Git.
+
+### Inbox Processing
+Name: Inbox processing  
+Status: Manual  
+Type: Workflow  
+Trigger: Explicit request or weekly review  
+Frequency: Weekly  
+Owner: PAIOS  
+Execution tool: Obsidian or approved agent  
+Inputs: `06 - Inbox/Inbox.md`, `06 - Inbox/Imports/`  
+Outputs: Categorized files in Knowledge, Projects, Templates, or Business areas  
+Dependencies: `00 - System/Automations/INBOX-PROCESSING.md`  
+Privacy level: Internal  
+Failure behavior: Item stays in Inbox until processed  
+Last validated: Not validated  
+Instructions: Follow INBOX-PROCESSING.md workflow: Capture → Categorize → File → Cross-reference → Archive.

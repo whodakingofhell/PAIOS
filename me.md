@@ -14,6 +14,11 @@ tags:
 related:
   - "./CONTEXT-POLICY.md"
   - "./AGENTS.md"
+  - "./ARCHITECTURE.md"
+  - "00 - System/Config/ai-context-manifest.yaml"
+  - "05 - Knowledge/Knowledge-MOC.md"
+  - "05 - Knowledge/References/Lessons-Ledger.md"
+  - "05 - Knowledge/References/Project-Patterns.md"
 ---
 
 # Working Profile
@@ -29,4 +34,12 @@ related:
 - Communication style: Direct, concise, practical
 
 Review this generated profile before operational use. Remove any field you do not want available to AI tools.
+
+## Knowledge Authority
+
+Available domains (see `05 - Knowledge/Knowledge-MOC.md` for full index):
+- AI engineering, Architecture, Business/Revenue/Marketing, DevOps/CI-CD/Monitoring
+- Product Design/UX Research/Design Systems, Security/Pentesting
+- Software Development (API, Testing, Accessibility, Project Phases)
+- Cross-project Lessons-Ledger and reusable Project-Patterns
 
