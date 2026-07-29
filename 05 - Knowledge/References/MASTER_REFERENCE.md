@@ -1,3 +1,16 @@
+---
+tags:
+  - paios/knowledge
+  - paios/references
+  - master-reference
+  - methodology
+related:
+  - "[[AI/MASTER-FRAMEWORK.md]]"
+  - "[[References/RECOMMENDATIONS.md]]"
+  - "[[References/EXPERT_CRITIQUES.md]]"
+  - "[[Architecture/SECURITY_ARCHITECTURE.md]]"
+---
+
 # MASTER REFERENCE — AI Tool Instructions
 
 **Purpose:** Give this file to any AI tool (Claude, ChatGPT, Copilot, etc.) at the START of a new project. It contains the complete development system.

@@ -3,9 +3,13 @@ title: "Team — Database"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [team, persona, database]
+tags: [team, persona, database, paios/knowledge, paios/software-development]
 owner: "OpenCode"
 canonical: true
+related:
+  - "Software-Development/Backend.md"
+  - "Architecture/03-Architecture.md"
+  - "Architecture/Architecture.md"
 ---
 
 # Database Team Persona

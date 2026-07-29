@@ -1,3 +1,13 @@
+---
+tags: [paios/knowledge, paios/ai, knowledge-management, prompt-engineering, rag]
+related:
+  - "AI/AI-Engineering.md"
+  - "AI/MASTER-FRAMEWORK.md"
+  - "AI/Claude-Handoff.md"
+  - "AI/Claude Master Prompt - Online Seller Support and Retail Assistant.md"
+  - "Software-Development/09-Documentation.md"
+---
+
 # 08 — AI Knowledge
 
 > Section 08 of the AI Engineering OS

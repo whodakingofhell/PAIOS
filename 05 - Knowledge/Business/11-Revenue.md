@@ -3,9 +3,14 @@ title: "OS Section 11 — Revenue"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [os-section, section-11, revenue]
+tags: [os-section, section-11, revenue, paios/knowledge, paios/business]
 owner: "OpenCode"
 canonical: true
+---
+related:
+  - "Business/01-Business.md"
+  - "Business/10-Marketing.md"
+  - "Product-Design/02-Product.md"
 ---
 
 # 11 — Revenue

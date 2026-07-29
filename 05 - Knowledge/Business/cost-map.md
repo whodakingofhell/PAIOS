@@ -3,9 +3,13 @@ title: "Cost Map — AI Appointment Assistant"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [integrations, cost, map, budget]
+tags: [integrations, cost, map, budget, paios/knowledge, paios/business]
 owner: "OpenCode"
 canonical: true
+---
+related:
+  - "Business/01-Business.md"
+  - "Business/Tool-Role-Mapping.md"
 ---
 
 # Cost Map

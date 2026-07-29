@@ -3,9 +3,14 @@ title: "Team — Frontend"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [team, persona, frontend]
+tags: [team, persona, frontend, paios/knowledge, paios/software-development]
 owner: "OpenCode"
 canonical: true
+related:
+  - "Software-Development/Backend.md"
+  - "Software-Development/04-Engineering.md"
+  - "Architecture/03-Architecture.md"
+  - "Architecture/Architecture.md"
 ---
 
 # Frontend Team Persona

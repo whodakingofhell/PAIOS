@@ -1,3 +1,15 @@
+---
+tags:
+  - paios/knowledge
+  - paios/references
+  - critique
+  - project-review
+related:
+  - "[[References/EXPERT_CRITIQUES.md]]"
+  - "[[References/EXPERT_CRITIQUE_TEMPLATE.md]]"
+  - "[[References/RECOMMENDATIONS.md]]"
+---
+
 # EXPERT CRITIQUES: AI Appointment Assistant
 
 Generated: 2026-07-18

@@ -3,10 +3,15 @@ title: "Claude — Second-in-Command Handoff"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [team, handoff, claude, agent]
+tags: [team, handoff, claude, agent, paios/knowledge, paios/ai]
 owner: "OpenCode"
 canonical: true
 ---
+related:
+  - "AI/08-AI-Knowledge.md"
+  - "AI/AI-Engineering.md"
+  - "AI/Claude Master Prompt - Online Seller Support and Retail Assistant.md"
+  - "AI/MASTER-FRAMEWORK.md"
 
 # Claude — Second-in-Command Agent
 

@@ -3,9 +3,13 @@ title: "Team — Security"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [team, persona, security]
+tags: [team, persona, security, paios/knowledge, paios/software-development]
 owner: "OpenCode"
 canonical: true
+related:
+  - "DevOps/06-Security.md"
+  - "Architecture/SECURITY_ARCHITECTURE.md"
+  - "DevOps/DevOps.md"
 ---
 
 # Security Team Persona

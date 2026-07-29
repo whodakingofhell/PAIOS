@@ -3,9 +3,13 @@ title: "Team — QA"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [team, persona, qa]
+tags: [team, persona, qa, paios/knowledge, paios/software-development]
 owner: "OpenCode"
 canonical: true
+related:
+  - "Software-Development/05-QA-Framework.md"
+  - "Software-Development/QA-Criticism-Framework.md"
+  - "Product-Design/Feature-Score-Rubric.md"
 ---
 
 # QA Team Persona

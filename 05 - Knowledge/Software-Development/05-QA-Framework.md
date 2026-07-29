@@ -1,3 +1,13 @@
+---
+tags: [paios/knowledge, paios/software-development, paios/qa, quality-assurance, testing]
+related:
+  - "Software-Development/QA.md"
+  - "Software-Development/QA-Criticism-Framework.md"
+  - "Product-Design/Feature-Score-Rubric.md"
+  - "Software-Development/04-Engineering.md"
+  - "DevOps/06-Security.md"
+---
+
 # 05 — Quality Assurance
 
 > Section 05 of the AI Engineering OS

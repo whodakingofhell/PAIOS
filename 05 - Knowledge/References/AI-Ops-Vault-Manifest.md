@@ -1,3 +1,13 @@
+---
+tags:
+  - paios/knowledge
+  - paios/references
+  - legacy
+  - vault-manifest
+related:
+  - "[[../README.md]]"
+---
+
 # MANIFEST — Single Source of Truth
 
 > Every canonical doc lives here. Every other tool's output is a draft in `00-Inbox/<tool>/`.

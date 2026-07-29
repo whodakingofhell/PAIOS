@@ -1,3 +1,11 @@
+---
+tags: [paios/knowledge, paios/software-development, paios/qa, criticism, review]
+related:
+  - "Software-Development/QA.md"
+  - "Software-Development/05-QA-Framework.md"
+  - "Product-Design/Feature-Score-Rubric.md"
+---
+
 # QA Criticism Framework
 
 > **Auto-injected into every generation under this OS.**

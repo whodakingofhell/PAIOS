@@ -1,3 +1,10 @@
+---
+tags: [paios/knowledge, paios/ai, prompt, claude, assistant]
+related:
+  - "AI/Claude-Handoff.md"
+  - "AI/AI-Engineering.md"
+  - "AI/08-AI-Knowledge.md"
+---
 
 Role
 You are an AI assistant for online sellers and service providers.

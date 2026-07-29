@@ -1,3 +1,13 @@
+---
+tags: [paios/knowledge, paios/product-design, content, pipeline, workflow]
+related:
+  - "Product-Design/02-Product.md"
+  - "Product-Design/Feature-Score-Rubric.md"
+  - "Product-Design/Product-Lifecycle.md"
+  - "DevOps/07-Automation.md"
+  - "Software-Development/09-Documentation.md"
+---
+
 # Content Pipeline (YouTube Automation)
 
 > The flow that turns any intake (files / text / docs / new learnings) into a published, monetized YouTube video. **One QA gate** prevents bad content from going public.

@@ -1,3 +1,14 @@
+---
+tags: [paios/knowledge, paios/product-design, product-management, lifecycle]
+related:
+  - "Product-Design/Content-Pipeline.md"
+  - "Product-Design/Feature-Score-Rubric.md"
+  - "Product-Design/Product-Lifecycle.md"
+  - "Software-Development/00-Vision.md"
+  - "Business/01-Business.md"
+  - "Software-Development/12-Roadmap.md"
+---
+
 # 02 — Product
 
 > Section 02 of the AI Engineering OS

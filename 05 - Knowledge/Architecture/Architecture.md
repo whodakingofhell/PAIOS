@@ -3,10 +3,16 @@ title: "Team — Architecture"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [team, persona, architecture]
+tags: [team, persona, architecture, paios/knowledge, paios/architecture]
 owner: "OpenCode"
 canonical: true
 ---
+related:
+  - "Architecture/03-Architecture.md"
+  - "Architecture/SECURITY_ARCHITECTURE.md"
+  - "Software-Development/Backend.md"
+  - "Software-Development/Frontend.md"
+  - "Software-Development/Database.md"
 
 # Architecture Team Persona
 

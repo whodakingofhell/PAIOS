@@ -1,3 +1,12 @@
+---
+tags: [paios/knowledge, paios/architecture, paios/security, security-architecture, threat-model]
+related:
+  - "Architecture/03-Architecture.md"
+  - "Architecture/Architecture.md"
+  - "Software-Development/Security.md"
+  - "DevOps/06-Security.md"
+---
+
 # SECURITY ARCHITECTURE — LicenseDesk Production Stack
 
 Reusable patterns from the LicenseDesk enterprise security implementation.

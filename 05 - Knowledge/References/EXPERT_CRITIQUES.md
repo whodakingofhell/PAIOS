@@ -1,3 +1,18 @@
+---
+tags:
+  - paios/knowledge
+  - paios/references
+  - critique
+  - review
+  - analysis
+related:
+  - "[[References/EXPERT_CRITIQUES_CURRENT_PROJECT.md]]"
+  - "[[References/MASTER_REFERENCE.md]]"
+  - "[[References/RECOMMENDATIONS.md]]"
+  - "[[Software-Development/QA-Criticism-Framework.md]]"
+  - "[[Software-Development/QA.md]]"
+---
+
 # EXPERT CRITIQUES — 15-Discipline Audit Framework
 
 Apply to EVERY deliverable before deployment. One error at a time. Verify after each fix.

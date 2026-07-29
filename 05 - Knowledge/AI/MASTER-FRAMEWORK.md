@@ -1,3 +1,14 @@
+---
+tags: [paios/knowledge, paios/ai, framework, methodology]
+related:
+  - "AI/08-AI-Knowledge.md"
+  - "AI/AI-Engineering.md"
+  - "References/MASTER_REFERENCE.md"
+  - "References/RECOMMENDATIONS.md"
+  - "References/EXPERT_CRITIQUES.md"
+  - "Software-Development/00-Vision.md"
+---
+
 # MASTER AI ENGINEERING FRAMEWORK
 
 > **The single stable document. Everything else plugs into it.**

@@ -3,9 +3,15 @@ title: "Team — Backend"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [team, persona, backend]
+tags: [team, persona, backend, paios/knowledge, paios/software-development]
 owner: "OpenCode"
 canonical: true
+related:
+  - "Software-Development/Frontend.md"
+  - "Software-Development/Database.md"
+  - "Architecture/03-Architecture.md"
+  - "Architecture/Architecture.md"
+  - "Software-Development/04-Engineering.md"
 ---
 
 # Backend Team Persona

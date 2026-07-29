@@ -1,3 +1,14 @@
+---
+tags: [paios/knowledge, paios/business, strategy, operations]
+related:
+  - "Business/10-Marketing.md"
+  - "Business/11-Revenue.md"
+  - "Business/cost-map.md"
+  - "Business/Tool-Role-Mapping.md"
+  - "Product-Design/02-Product.md"
+  - "Software-Development/00-Vision.md"
+---
+
 # 01 — Business
 
 > Section 01 of the AI Engineering OS

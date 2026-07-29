@@ -3,9 +3,14 @@ title: "OS Section 10 — Marketing"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [os-section, section-10, marketing]
+tags: [os-section, section-10, marketing, paios/knowledge, paios/business]
 owner: "OpenCode"
 canonical: true
+---
+related:
+  - "Business/01-Business.md"
+  - "Business/11-Revenue.md"
+  - "Product-Design/02-Product.md"
 ---
 
 # 10 — Marketing

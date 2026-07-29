@@ -1,3 +1,12 @@
+---
+tags: [paios/knowledge, paios/product-design, lifecycle, product-management]
+related:
+  - "Product-Design/02-Product.md"
+  - "Product-Design/Content-Pipeline.md"
+  - "Product-Design/Feature-Score-Rubric.md"
+  - "Business/01-Business.md"
+---
+
 # Product Lifecycle
 
 > The flow every software build follows under this OS. **Two QA gates** catch defects when they're cheapest.

@@ -1,3 +1,13 @@
+---
+tags: [paios/knowledge, paios/product-design, scoring, rubric, prioritization]
+related:
+  - "Product-Design/02-Product.md"
+  - "Product-Design/Content-Pipeline.md"
+  - "Product-Design/Product-Lifecycle.md"
+  - "Software-Development/05-QA-Framework.md"
+  - "Software-Development/QA-Criticism-Framework.md"
+---
+
 # Feature Score Rubric
 
 > **The scorecard every feature/build is measured against before approval.**

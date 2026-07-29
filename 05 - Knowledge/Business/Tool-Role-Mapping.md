@@ -1,3 +1,12 @@
+---
+tags: [paios/knowledge, paios/business, tools, roles, integration]
+related:
+  - "Business/cost-map.md"
+  - "AI/AI-Engineering.md"
+  - "DevOps/DevOps.md"
+  - "DevOps/Automation-Engineering.md"
+---
+
 # Tool-to-Role Mapping
 
 > Which AI tool handles which team role. Updated 2026-07-18.

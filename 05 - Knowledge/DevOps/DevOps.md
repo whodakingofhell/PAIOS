@@ -3,9 +3,16 @@ title: "Team — DevOps"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [team, persona, devops]
+tags: [team, persona, devops, paios/knowledge, paios/devops]
 owner: "OpenCode"
 canonical: true
+---
+related:
+  - "DevOps/06-Security.md"
+  - "DevOps/07-Automation.md"
+  - "DevOps/Automation-Engineering.md"
+  - "Software-Development/04-Engineering.md"
+  - "Architecture/03-Architecture.md"
 ---
 
 # DevOps Team Persona

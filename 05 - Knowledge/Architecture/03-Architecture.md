@@ -1,3 +1,15 @@
+---
+tags: [paios/knowledge, paios/architecture, system-design, infrastructure]
+related:
+  - "Architecture/Architecture.md"
+  - "Architecture/SECURITY_ARCHITECTURE.md"
+  - "Software-Development/04-Engineering.md"
+  - "Software-Development/Backend.md"
+  - "Software-Development/Frontend.md"
+  - "Software-Development/Database.md"
+  - "DevOps/DevOps.md"
+---
+
 # 03 — Architecture
 
 > Section 03 of the AI Engineering OS

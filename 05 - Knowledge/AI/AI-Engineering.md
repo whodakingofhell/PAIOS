@@ -3,10 +3,16 @@ title: "Team — AI-Engineering"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [team, persona, ai-engineering]
+tags: [team, persona, ai-engineering, paios/knowledge, paios/ai]
 owner: "OpenCode"
 canonical: true
 ---
+related:
+  - "AI/08-AI-Knowledge.md"
+  - "AI/MASTER-FRAMEWORK.md"
+  - "AI/Claude-Handoff.md"
+  - "DevOps/Automation-Engineering.md"
+  - "DevOps/DevOps.md"
 
 # AI-Engineering Team Persona
 

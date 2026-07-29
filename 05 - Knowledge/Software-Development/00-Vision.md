@@ -1,3 +1,12 @@
+---
+tags: [paios/knowledge, paios/software-development, vision, strategy]
+related:
+  - "Software-Development/12-Roadmap.md"
+  - "Business/01-Business.md"
+  - "Product-Design/02-Product.md"
+  - "AI/MASTER-FRAMEWORK.md"
+---
+
 # 00 — Vision
 
 > Section 00 of the AI Engineering OS

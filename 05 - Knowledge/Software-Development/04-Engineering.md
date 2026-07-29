@@ -1,3 +1,14 @@
+---
+tags: [paios/knowledge, paios/software-development, engineering, development]
+related:
+  - "Architecture/03-Architecture.md"
+  - "Software-Development/Backend.md"
+  - "Software-Development/Frontend.md"
+  - "Software-Development/Database.md"
+  - "Software-Development/05-QA-Framework.md"
+  - "DevOps/DevOps.md"
+---
+
 # 04 — Engineering
 
 > Section 04 of the AI Engineering OS

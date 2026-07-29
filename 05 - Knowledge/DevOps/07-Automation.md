@@ -1,3 +1,12 @@
+---
+tags: [paios/knowledge, paios/devops, automation, ci-cd, pipeline]
+related:
+  - "DevOps/Automation-Engineering.md"
+  - "DevOps/DevOps.md"
+  - "Product-Design/Content-Pipeline.md"
+  - "Software-Development/04-Engineering.md"
+---
+
 # 07 — Automation
 
 > Section 07 of the AI Engineering OS

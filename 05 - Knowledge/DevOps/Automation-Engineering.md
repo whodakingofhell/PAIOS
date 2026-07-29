@@ -3,9 +3,15 @@ title: "Team — Automation-Engineering"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [team, persona, automation-engineering]
+tags: [team, persona, automation-engineering, paios/knowledge, paios/devops]
 owner: "OpenCode"
 canonical: true
+---
+related:
+  - "DevOps/07-Automation.md"
+  - "DevOps/DevOps.md"
+  - "Product-Design/Content-Pipeline.md"
+  - "AI/AI-Engineering.md"
 ---
 
 # Automation-Engineering Team Persona

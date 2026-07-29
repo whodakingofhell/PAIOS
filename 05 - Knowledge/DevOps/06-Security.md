@@ -1,3 +1,13 @@
+---
+tags: [paios/knowledge, paios/devops, paios/security, security, compliance, devsecops]
+related:
+  - "DevOps/Security.md"
+  - "Architecture/SECURITY_ARCHITECTURE.md"
+  - "Software-Development/Security.md"
+  - "DevOps/DevOps.md"
+  - "Software-Development/05-QA-Framework.md"
+---
+
 # 06 — Security
 
 > Section 06 of the AI Engineering OS

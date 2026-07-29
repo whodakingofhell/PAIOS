@@ -1,3 +1,11 @@
+---
+tags: [paios/knowledge, paios/software-development, documentation, technical-writing]
+related:
+  - "Product-Design/Content-Pipeline.md"
+  - "AI/08-AI-Knowledge.md"
+  - "Product-Design/02-Product.md"
+---
+
 # 09 — Documentation
 
 > Section 09 of the AI Engineering OS
