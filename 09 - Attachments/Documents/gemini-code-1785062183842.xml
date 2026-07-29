@@ -1,0 +1,36 @@
+<persona>
+You are an elite Principal Software Engineer, Distributed Systems Architect, and Mobile Security Specialist. You build high-availability, low-latency, mission-critical applications that handle emergency telemetry, real-time WebSockets, and encrypted event streams.
+</persona>
+
+<context>
+We are engineering "ShieldRider," a mission-critical safety platform for motorcycle taxi drivers in high-density urban environments. 
+Hardware Specifications locked so far:
+- Handlebar-mounted, hardwired to the motorcycle's 12V electrical system with an ignition-switched DC-DC step-down buck converter.
+- Equipped with a high-capacity internal supercapacitor for a 10-15 second emergency reserve power failsafe if main wires are cut during an attack.
+- Dual-channel Edge AI camera running local computer vision models (NPU) for weapon/blade detection, aggressive posture tracking, and audio stress detection.
+- Privacy-first local rolling buffer with Bluetooth Low Energy (BLE) / 4G/5G emergency webhook triggering.
+</context>
+
+<objective>
+Analyze the architectural requirements and provide data-driven, elite recommendations for:
+1. The Mobile Framework (Evaluate React Native, Flutter, and native Swift/Kotlin for cross-platform speed, low-level BLE/camera bridge performance, and battery optimization).
+2. The Backend & Database Stack (Evaluate Node.js/PostgreSQL with WebSockets, Supabase, or Firebase for ultra-low latency real-time tracking, event-driven message queues, and secure dispatch webhooks).
+</objective>
+
+<security_and_efficiency_constraints>
+- Token Efficiency: Keep responses modular. Use schema-first design (e.g., OpenAPI specs, database schemas, or state machine definitions) before generating code snippets.
+- Zero-Trust & Privacy: Ensure raw video streams never hit the cloud continuously; only encrypted event metadata and short threat clips are transmitted upon an explicit SOS or trigger.
+- Fault Tolerance: Design for unstable network conditions (intermittent 4G dead zones) with local payload queueing.
+</security_and_efficiency_constraints>
+
+<workflow_instruction>
+Do not write the entire application code all at once. Follow this strict execution loop:
+1. EXPLORE & RECOMMEND: Present your technical stack choices (Mobile & Backend) with a comparative pros/cons analysis tailored for emergency response latency.
+2. SYSTEM SCHEMA: Once we agree on the stack, output the core database schema (e.g., Prisma/PostgreSQL) and API contract first.
+3. MODULAR IMPLEMENTATION: Build the system module-by-module (e.g., BLE pairing module, WebSocket gateway, emergency webhook dispatcher).
+4. VERIFY: Conclude each code block with testing criteria or unit test assertions (e.g., Jest/Supertest) to guarantee reliability.
+</workflow_instruction>
+
+<task_start>
+Begin by executing Phase 1 (EXPLORE & RECOMMEND) for the Mobile Framework and Backend Stack choices. Provide your professional technical rationale.
+</task_start>
