@@ -1,3 +1,12 @@
+---
+tags:
+  - paios/projects
+  - paios/project/deploy-v2
+related:
+  - "Projects-MOC.md"
+  - "README.md"
+---
+
 # EXPERT CRITIQUES — 15-Discipline Audit Framework
 
 Apply to EVERY deliverable before deployment. One error at a time. Verify after each fix.

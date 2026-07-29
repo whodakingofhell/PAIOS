@@ -1,3 +1,14 @@
+---
+tags:
+  - paios/projects
+  - paios/project/ai-appointment-assistant
+related:
+  - "../../05 - Knowledge/References/EXPERT_CRITIQUES_CURRENT_PROJECT.md"
+  - "../../08 - Templates/Decisions/EXPERT_CRITIQUE_TEMPLATE.md"
+  - "../../05 - Knowledge/References/RECOMMENDATIONS.md"
+  - "../../08 - Templates/Project/PROJECT_STARTER.md"
+---
+
 # RECOMMENDATIONS: How to Improve the System
 
 Generated: 2026-07-18

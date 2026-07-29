@@ -1,3 +1,13 @@
+---
+tags:
+  - paios/projects
+  - paios/project/ai-appointment-assistant
+related:
+  - "Projects-MOC.md"
+  - "../README.md"
+  - "research/"
+---
+
 ## Plain-language summary of your vision
 
 - Audience: Online sellers and service providers (for example: remote PC support, online services, local service businesses).
@@ -24,7 +34,7 @@
         
 - Tools you plan to use:
     
-    - **Claude** – main “brain” of the system.
+    - **Claude** – main "brain" of the system.
         
     - **Perplexity** – for research, facts, and validating ideas.
         

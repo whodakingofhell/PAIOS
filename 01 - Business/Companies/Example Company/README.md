@@ -1,4 +1,9 @@
-﻿# Example Company
+﻿---
+tags: [paios/business]
+related: "../../Business-MOC.md"
+---
+
+# Example Company
 
 Synthetic company profile for demonstrating structure. It is not a real organization.
 
@@ -6,4 +11,3 @@ Synthetic company profile for demonstrating structure. It is not a real organiza
 - Status: Example only
 - Contacts: None
 - Sensitive data: None
-

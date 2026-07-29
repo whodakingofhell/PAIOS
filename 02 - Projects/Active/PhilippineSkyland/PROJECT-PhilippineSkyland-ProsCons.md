@@ -1,3 +1,12 @@
+---
+tags:
+  - paios/projects
+  - paios/project/philippineskyland
+related:
+  - "Projects-MOC.md"
+  - "../../02 - Projects/"
+---
+
 # Philippine Skyland — Pros, Cons & Verdict
 
 > Balanced assessment of platform strengths and weaknesses

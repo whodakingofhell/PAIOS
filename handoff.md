@@ -1,4 +1,4 @@
-﻿---
+---
 title: "PAIOS Handoff"
 type: handoff
 status: active
@@ -9,6 +9,11 @@ ai_access: internal
 ai_generated: true
 review_status: draft
 canonical: true
+tags:
+  - paios/system
+related:
+  - "./memory.md"
+  - "./CHANGELOG.md"
 ---
 
 # Current Objective

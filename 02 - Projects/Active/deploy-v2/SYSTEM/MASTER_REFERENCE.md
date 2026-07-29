@@ -1,3 +1,12 @@
+---
+tags:
+  - paios/projects
+  - paios/project/deploy-v2
+related:
+  - "Projects-MOC.md"
+  - "README.md"
+---
+
 # MASTER REFERENCE — AI Tool Instructions
 
 **Purpose:** Give this file to any AI tool (Claude, ChatGPT, Copilot, etc.) at the START of a new project. It contains the complete development system.

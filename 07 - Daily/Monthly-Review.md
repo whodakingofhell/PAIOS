@@ -1,4 +1,9 @@
-﻿# Monthly Review - YYYY-MM
+﻿---
+tags: [paios/daily]
+related: ["Monthly-Review.md", "Weekly-Review.md"]
+---
+
+# Monthly Review - YYYY-MM
 
 ## Outcomes
 
@@ -11,4 +16,3 @@
 ## System Risks
 
 ## Next Month
-

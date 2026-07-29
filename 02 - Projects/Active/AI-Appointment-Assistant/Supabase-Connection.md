@@ -3,9 +3,18 @@ title: "Supabase Connection Guide"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [project, supabase, setup, integration]
+tags:
+  - project
+  - supabase
+  - setup
+  - integration
+  - paios/projects
+  - paios/project/ai-appointment-assistant
 owner: "OpenCode"
 canonical: true
+related:
+  - "Scheduling-Rules.md"
+  - "README.md"
 ---
 
 # Supabase Connection Guide

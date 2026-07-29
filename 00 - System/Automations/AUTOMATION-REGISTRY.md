@@ -1,4 +1,12 @@
-﻿# Automation Registry
+﻿---
+tags:
+  - paios/system
+related:
+  - "../../AGENTS.md"
+  - "../Config/Obsidian-Setup.md"
+---
+
+# Automation Registry
 
 ## Daily Review
 
@@ -219,4 +227,3 @@ Privacy level: Restricted
 Failure behavior: Preserve source; report partial results  
 Last validated: Not validated  
 Instructions: Inventory read-only; exclude generated raw data from normal AI context and Git.
-

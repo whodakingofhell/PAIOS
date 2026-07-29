@@ -1,4 +1,11 @@
-﻿# Sample Project Context
+﻿---
+tags:
+  - paios/projects
+related:
+  - "Projects-MOC.md"
+---
+
+# Sample Project Context
 
 ## Objective
 
@@ -13,4 +20,3 @@ Reduce one manual workflow from five steps to three.
 ## Current Phase
 
 Discovery.
-

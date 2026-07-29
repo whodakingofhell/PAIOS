@@ -1,3 +1,8 @@
+---
+tags: [paios/templates]
+related: "../../00 - System/Config/Obsidian-Setup.md"
+---
+
 # EXPERT CRITIQUE LOG
 
 This file tracks world-expert feedback for every project deliverable.

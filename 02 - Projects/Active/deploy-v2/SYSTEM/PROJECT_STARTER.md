@@ -1,3 +1,12 @@
+---
+tags:
+  - paios/projects
+  - paios/project/deploy-v2
+related:
+  - "Projects-MOC.md"
+  - "README.md"
+---
+
 # PROJECT STARTER — Universal Template
 
 Use at the START of every new project. Copy, fill, execute.

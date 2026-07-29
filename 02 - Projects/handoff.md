@@ -1,4 +1,11 @@
-﻿# Project Handoff
+﻿---
+tags:
+  - paios/projects
+related:
+  - "Projects-MOC.md"
+---
+
+# Project Handoff
 
 ## Current Objective
 
@@ -17,4 +24,3 @@
 ## Validation Status
 
 Replace and refresh this file. Preserve a dated snapshot before material compaction or transfer.
-

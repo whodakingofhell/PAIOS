@@ -1,4 +1,9 @@
-﻿# Hobbies Map of Content
+﻿---
+tags: [paios/hobbies]
+related: "../05 - Knowledge/Knowledge-MOC.md"
+---
+
+# Hobbies Map of Content
 
 ## Purpose
 
@@ -11,4 +16,3 @@ Link only current hobby projects. Keep personal enjoyment separate from business
 ## Archive Guidance
 
 Archive inactive pursuits without deleting durable lessons or published references.
-

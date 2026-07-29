@@ -1,3 +1,12 @@
+---
+tags:
+  - paios/projects
+  - paios/project/deploy-v2
+related:
+  - "Projects-MOC.md"
+  - "README.md"
+---
+
 # SECURITY ARCHITECTURE — LicenseDesk Production Stack
 
 Reusable patterns from the LicenseDesk enterprise security implementation.

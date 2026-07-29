@@ -1,3 +1,8 @@
+---
+tags: [paios/templates]
+related: "../../00 - System/Config/Obsidian-Setup.md"
+---
+
 # PERMANENT PROJECT STARTER SYSTEM
 
 Use this template at the START of every new project. Copy, fill in, and save.

@@ -1,4 +1,12 @@
-﻿# Archive Policy
+﻿---
+tags:
+  - paios/system
+related:
+  - "../07 - Daily/Daily-Note.md"
+  - "../99 - Archive/README.md"
+---
+
+# Archive Policy
 
 Archive completed, obsolete, or inactive information after preserving required context and links.
 
@@ -7,4 +15,3 @@ Archive completed, obsolete, or inactive information after preserving required c
 - Historical handoffs are snapshots, not normal bootstrap.
 - Archives remain read-only by default and are loaded only for explicit historical questions.
 - Never use archive movement to hide unresolved ownership, privacy, or retention decisions.
-

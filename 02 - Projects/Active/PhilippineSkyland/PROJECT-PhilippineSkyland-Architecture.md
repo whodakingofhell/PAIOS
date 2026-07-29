@@ -1,3 +1,12 @@
+---
+tags:
+  - paios/projects
+  - paios/project/philippineskyland
+related:
+  - "Projects-MOC.md"
+  - "../../02 - Projects/"
+---
+
 # Philippine Skyland MGT and DEVT OPC — Architecture
 
 > Architecture document for the PPSMDO real estate broker platform

@@ -1,3 +1,12 @@
+---
+tags:
+  - paios/projects
+  - paios/project/philippineskyland
+related:
+  - "Projects-MOC.md"
+  - "../../02 - Projects/"
+---
+
 # Philippine Skyland — QA Elite Team Assessment
 
 > Reliability, test results, and production readiness report

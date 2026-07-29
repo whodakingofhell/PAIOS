@@ -1,3 +1,13 @@
+---
+tags:
+  - paios/projects
+  - paios/project/ai-appointment-assistant
+related:
+  - "Projects-MOC.md"
+  - "../README.md"
+  - "research/"
+---
+
 - In Obsidian, maintain specific docs:
     
     - `scheduling_rules.md` – your current operating hours, buffers, limits, etc.
@@ -6,13 +16,13 @@
         
     - `integration_spec.md` – how the Discord webhook expects payloads.
         
-- For each doc you update, run a **“document challenge” session** with Claude:
+- For each doc you update, run a **"document challenge" session** with Claude:
     
     - Ask Claude (with the brain prompt loaded):
         
-        - “Check this rules document for contradictions, missing cases, and edge scenarios.”
+        - "Check this rules document for contradictions, missing cases, and edge scenarios."
             
-        - “Propose test cases that might break this logic.”
+        - "Propose test cases that might break this logic."
             
     - Claude then:
         

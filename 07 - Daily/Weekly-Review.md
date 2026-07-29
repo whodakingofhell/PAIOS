@@ -1,4 +1,9 @@
-﻿# Weekly Review - YYYY-MM-DD
+﻿---
+tags: [paios/daily]
+related: ["Monthly-Review.md", "Weekly-Review.md"]
+---
+
+# Weekly Review - YYYY-MM-DD
 
 ## Outcomes
 
@@ -13,4 +18,3 @@
 ## Git and Project Health
 
 ## Next Week
-

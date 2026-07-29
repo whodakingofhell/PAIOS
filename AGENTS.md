@@ -9,6 +9,13 @@ ai_access: internal
 ai_generated: true
 review_status: draft
 canonical: true
+tags:
+  - paios/system
+related:
+  - "./ARCHITECTURE.md"
+  - "./CONTEXT-POLICY.md"
+  - "./DESIGN.md"
+  - "./PRODUCT.md"
 ---
 
 # PAIOS AI Router

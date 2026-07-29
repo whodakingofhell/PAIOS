@@ -3,10 +3,19 @@ title: "Lessons Learned / Decision Log — Sessions 1-3"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [project, lessons, decisions, log]
+tags:
+  - project
+  - lessons
+  - decisions
+  - log
+  - paios/projects
+  - paios/project/ai-appointment-assistant
 owner: "Claude"
 canonical: true
 source: "Claude Anthropic (second-in-command agent)"
+related:
+  - "../../memory.md"
+  - "handoff.md"
 ---
 
 # Lessons Learned / Decision Log — Session 1 (2026-07-15)

@@ -10,6 +10,12 @@ ai_access: internal
 ai_generated: true
 review_status: draft
 canonical: true
+tags:
+  - paios/system
+related:
+  - "./AGENTS.md"
+  - "./DESIGN.md"
+  - "./CODEX.md"
 ---
 
 # PAIOS Architecture

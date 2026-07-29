@@ -1,4 +1,12 @@
-﻿# Schedule
+﻿---
+tags:
+  - paios/system
+related:
+  - "./memory.md"
+  - "./AGENTS.md"
+---
+
+# Schedule
 
 Timezone: Asia/Manila
 
@@ -19,4 +27,3 @@ Timezone: Asia/Manila
 - Monthly review enabled: true
 
 Use ISO dates and 24-hour time. Keep only one item under Critical Priority.
-

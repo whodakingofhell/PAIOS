@@ -3,9 +3,18 @@ title: "QA Elite Team Review — AI Appointment Assistant v1"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [qa, review, criticism, scorecard]
+tags:
+  - qa
+  - review
+  - criticism
+  - scorecard
+  - paios/projects
+  - paios/project/ai-appointment-assistant
 owner: "QA Team"
 canonical: true
+related:
+  - "Product.md"
+  - "Vision.md"
 ---
 
 # QA Elite Team Review — Full System Audit

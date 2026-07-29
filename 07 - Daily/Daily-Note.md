@@ -1,6 +1,8 @@
 ﻿---
 date: YYYY-MM-DD
 type: daily-note
+tags: [paios/daily]
+related: ["Monthly-Review.md", "Weekly-Review.md"]
 ---
 
 # YYYY-MM-DD
@@ -21,4 +23,3 @@ type: daily-note
 - Blocked:
 - Carry forward:
 - Memory or handoff maintenance needed:
-

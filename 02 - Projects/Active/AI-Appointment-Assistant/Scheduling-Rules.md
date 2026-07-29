@@ -3,9 +3,17 @@ title: "Scheduling Rules"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [project, rules, scheduling]
+tags:
+  - project
+  - rules
+  - scheduling
+  - paios/projects
+  - paios/project/ai-appointment-assistant
 owner: "OpenCode"
 canonical: true
+related:
+  - "Vision.md"
+  - "Claude-Brain-Prompt.md"
 ---
 
 # Scheduling Rules

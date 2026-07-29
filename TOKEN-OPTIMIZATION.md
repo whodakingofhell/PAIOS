@@ -1,4 +1,12 @@
-﻿# Token Optimization
+﻿---
+tags:
+  - paios/system
+related:
+  - "./CODEX.md"
+  - "./AGENTS.md"
+---
+
+# Token Optimization
 
 ## Defaults
 
@@ -16,4 +24,3 @@
 - Very large file: 200 KB.
 
 For large files, inspect headings, search relevant terms, read only the matching section, and prefer indexes or summaries.
-

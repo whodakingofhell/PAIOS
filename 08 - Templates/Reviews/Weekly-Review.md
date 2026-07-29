@@ -1,4 +1,9 @@
-﻿# Weekly Review - YYYY-MM-DD
+﻿---
+tags: [paios/templates]
+related: "../../00 - System/Config/Obsidian-Setup.md"
+---
+
+# Weekly Review - YYYY-MM-DD
 
 ## Outcomes
 
@@ -13,4 +18,3 @@
 ## Git and Project Health
 
 ## Next Week
-

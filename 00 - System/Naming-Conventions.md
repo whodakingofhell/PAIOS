@@ -1,4 +1,11 @@
-﻿# Naming Conventions
+﻿---
+tags:
+  - paios/system
+related:
+  - "Metadata-Standards.md"
+---
+
+# Naming Conventions
 
 - Top-level navigation uses two-digit numeric prefixes.
 - Folders and durable notes use descriptive title case.
@@ -7,4 +14,3 @@
 - Time-based records use `YYYY-MM-DD - Title.md`.
 - ADRs use `ADR-001 - Decision Title.md`.
 - Tags use lowercase kebab case.
-

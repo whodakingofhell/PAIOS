@@ -3,9 +3,18 @@ title: "AI Appointment Assistant — Product Spec"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [project, product, specification, features]
+tags:
+  - project
+  - product
+  - specification
+  - features
+  - paios/projects
+  - paios/project/ai-appointment-assistant
 owner: "OpenCode"
 canonical: true
+related:
+  - "Business.md"
+  - "README.md"
 ---
 
 # Product Specification

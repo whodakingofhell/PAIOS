@@ -1,4 +1,12 @@
-﻿# PAIOS — Personal AI Operating System
+﻿---
+tags:
+  - paios/system
+related:
+  - "./AGENTS.md"
+  - "./ARCHITECTURE.md"
+---
+
+# PAIOS — Personal AI Operating System
 
 A portable, Markdown-first knowledge OS for durable knowledge, project management, business operations, and AI-assisted execution. Built on the [Knowledge OS Starter Kit](https://github.com/kravetech/kos-starter-kit) architecture.
 
@@ -108,4 +116,3 @@ All content was deduplicated and organized into the KOS numbered structure.
 
 System architecture: Apache 2.0 (via KOS-Starter-Kit)  
 Content: CC-BY-4.0 unless otherwise noted
-

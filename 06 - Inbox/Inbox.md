@@ -1,4 +1,9 @@
-﻿# Inbox
+﻿---
+tags: [paios/inbox]
+related: ["../AGENTS.md", "../07 - Daily/Daily-Note.md"]
+---
+
+# Inbox
 
 Use this area for unprocessed input.
 
@@ -10,4 +15,3 @@ Use this area for unprocessed input.
 4. Route durable information to the correct domain.
 5. Preserve sources and privacy classification.
 6. Empty the queue on the configured review rhythm.
-

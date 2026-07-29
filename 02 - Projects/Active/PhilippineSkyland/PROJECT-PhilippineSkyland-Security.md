@@ -1,3 +1,12 @@
+---
+tags:
+  - paios/projects
+  - paios/project/philippineskyland
+related:
+  - "Projects-MOC.md"
+  - "../../02 - Projects/"
+---
+
 # Philippine Skyland — Security Assessment
 
 > Security posture and compliance report for PPSMDO platform

@@ -3,9 +3,18 @@ title: "Claude Appointment Brain — System Prompt"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [project, prompt, claude, brain]
+tags:
+  - project
+  - prompt
+  - claude
+  - brain
+  - paios/projects
+  - paios/project/ai-appointment-assistant
 owner: "OpenCode"
 canonical: true
+related:
+  - "../../05 - Knowledge/AI/"
+  - "Vision.md"
 ---
 
 # Claude Appointment Brain Prompt

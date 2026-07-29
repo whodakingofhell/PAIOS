@@ -1,5 +1,14 @@
+---
+tags:
+  - paios/projects
+  - paios/project/ai-appointment-assistant
+related:
+  - "Projects-MOC.md"
+  - "../README.md"
+  - "research/"
+---
 
-From your requirements and research on AI scheduling and chatbots for small businesses, here’s the brain you’re building:vellum+4
+From your requirements and research on AI scheduling and chatbots for small businesses, here's the brain you're building:vellum+4
 
 - Understand your business:
     

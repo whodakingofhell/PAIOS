@@ -1,3 +1,12 @@
+---
+tags:
+  - paios/projects
+  - paios/project/philippineskyland
+related:
+  - "Projects-MOC.md"
+  - "../../02 - Projects/"
+---
+
 # How to Add Your Website to Google Search Console
 ## (Step-by-Step Guide for Non-Technical Users)
 

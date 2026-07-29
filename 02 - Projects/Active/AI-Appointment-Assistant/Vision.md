@@ -3,9 +3,18 @@ title: "AI Appointment Assistant — Vision"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [project, vision, appointment, AI]
+tags:
+  - project
+  - vision
+  - appointment
+  - AI
+  - paios/projects
+  - paios/project/ai-appointment-assistant
 owner: "OpenCode"
 canonical: true
+related:
+  - "Product.md"
+  - "Business.md"
 ---
 
 # Project Vision

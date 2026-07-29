@@ -1,7 +1,16 @@
+---
+tags:
+  - paios/projects
+  - paios/project/ai-appointment-assistant
+related:
+  - "Projects-MOC.md"
+  - "../README.md"
+  - "research/"
+---
 
 ## 1. Overview
 
-This project is an AI assistant (with Claude as the main “brain”) that helps online sellers and service providers automate customer support, starting with appointment scheduling. It is designed for non-technical users, focuses on short remote support sessions (5–20 minutes via AnyDesk/TeamViewer), and keeps all times anchored to Philippine time (Asia/Manila, UTC+8) while handling overseas clients.
+This project is an AI assistant (with Claude as the main "brain") that helps online sellers and service providers automate customer support, starting with appointment scheduling. It is designed for non-technical users, focuses on short remote support sessions (5–20 minutes via AnyDesk/TeamViewer), and keeps all times anchored to Philippine time (Asia/Manila, UTC+8) while handling overseas clients.
 
 The system aims to be low-cost (mostly free tiers) and token-efficient, with short, clear conversations.
 
@@ -56,7 +65,7 @@ Research shows AI appointment tools can drastically reduce scheduling effort and
             
         - Interprets their requested time locally and converts to Asia/Manila.
             
-        - Shows both “your time” and “Philippine time” in the confirmation.callsphere+2
+        - Shows both "your time" and "Philippine time" in the confirmation.callsphere+2
             
 3. **Discord (and Email) Notifications**
     
@@ -66,7 +75,7 @@ Research shows AI appointment tools can drastically reduce scheduling effort and
             
         - A small structured JSON object with all booking details.
             
-    - Discord receives a clear message (e.g., “New appointment: [Name], [Service], [PH time], [Duration], [Contact]”).
+    - Discord receives a clear message (e.g., "New appointment: [Name], [Service], [PH time], [Duration], [Contact]").
         
 4. **Token-Efficient Conversations**
     
@@ -99,7 +108,7 @@ Research shows AI appointment tools can drastically reduce scheduling effort and
         
 - **Backend (Serverless on Vercel)**
     
-    - Receives Claude’s booking payload.
+    - Receives Claude's booking payload.
         
     - Sends Discord webhook messages and, later, email notifications.
         
@@ -115,7 +124,7 @@ Research shows AI appointment tools can drastically reduce scheduling effort and
             
         - `scheduling_rules.md` – business rules.
             
-        - `appointment_brain_prompt.md` – Claude’s instructions.
+        - `appointment_brain_prompt.md` – Claude's instructions.
             
         - `tests_appointment_brain.md` – example conversations and expected outputs.
             
@@ -140,7 +149,7 @@ Research shows AI appointment tools can drastically reduce scheduling effort and
     
     - Each appointment: 5–20 minutes.
         
-    - If user doesn’t specify, default to a configured length (e.g., 15 minutes).
+    - If user doesn't specify, default to a configured length (e.g., 15 minutes).
         
 - **Availability** (to be defined precisely):
     
@@ -161,7 +170,7 @@ Research shows AI appointment tools can drastically reduce scheduling effort and
         
     - Research shows clear requirements and user-friendly design are key for successful e-appointment systems.ijcope+2
         
-2. **Build the Claude “Appointment Brain”**
+2. **Build the Claude "Appointment Brain"**
     
     - Encode rules, required fields, time zone logic, and token-efficiency behavior in a system prompt.
         
@@ -185,7 +194,7 @@ Research shows AI appointment tools can drastically reduce scheduling effort and
     
     - Implement a small backend that:
         
-        - Accepts Claude’s booking payload.
+        - Accepts Claude's booking payload.
             
         - Posts a formatted message to a Discord channel.
             
@@ -193,15 +202,15 @@ Research shows AI appointment tools can drastically reduce scheduling effort and
     
     - Ensure the chat interface uses simple language:
         
-        - “Your time” vs. “Philippine time”.
+        - "Your time" vs. "Philippine time".
             
-        - No technical terms like “webhook” for users.
+        - No technical terms like "webhook" for users.
             
     - Research on non-technical chatbot users emphasizes simple, predictable interfaces and clear feedback.iacis+2
         
 6. **Iterate and Expand**
     
-    - Use real conversations and “lessons_learned.md” to:
+    - Use real conversations and "lessons_learned.md" to:
         
         - Improve rules and prompts.
             

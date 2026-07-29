@@ -1,4 +1,9 @@
-﻿# Monthly Review - YYYY-MM
+﻿---
+tags: [paios/templates]
+related: "../../00 - System/Config/Obsidian-Setup.md"
+---
+
+# Monthly Review - YYYY-MM
 
 ## Outcomes
 
@@ -11,4 +16,3 @@
 ## System Risks
 
 ## Next Month
-

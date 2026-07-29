@@ -1,4 +1,9 @@
-﻿# Personal Map of Content
+﻿---
+tags: [paios/personal]
+related: "../05 - Knowledge/Knowledge-MOC.md"
+---
+
+# Personal Map of Content
 
 ## Purpose
 
@@ -11,4 +16,3 @@ Default AI access: `restricted`. Load personal material only for an explicit tas
 ## Archive Guidance
 
 Archive inactive material while preserving legal, tax, health, or personal retention needs.
-

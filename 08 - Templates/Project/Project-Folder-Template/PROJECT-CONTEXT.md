@@ -8,6 +8,7 @@ updated: 2026-07-29
 ai_access: internal
 ai_generated: true
 review_status: draft
+related: "../../../02 - Projects/PROJECT-CONTEXT.md"
 ---
 
 # Project Context
@@ -31,4 +32,3 @@ State the active phase and exit criteria.
 ## Authorities
 
 Link requirements, architecture, decisions, roadmap, memory, and handoff when they exist.
-

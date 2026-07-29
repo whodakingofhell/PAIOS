@@ -1,4 +1,11 @@
-﻿# Metadata Standards
+﻿---
+tags:
+  - paios/system
+related:
+  - "../05 - Knowledge/Metadata/Metadata-Standards.md"
+---
+
+# Metadata Standards
 
 Use metadata when it improves routing, governance, or review. Do not force it onto every casual note.
 
@@ -19,4 +26,3 @@ Allowed `ai_access`: `public`, `internal`, `restricted`.
 Allowed `review_status`: `draft`, `reviewed`, `approved`.
 
 Restricted files are never automatically loaded. AI-generated public or operational content begins as draft. Missing access classification is restricted. Never store secrets in metadata.
-

@@ -1,4 +1,4 @@
-﻿---
+---
 tags:
   - paios/moc
   - paios/knowledge

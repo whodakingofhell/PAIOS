@@ -1,6 +1,7 @@
 ﻿---
 date: YYYY-MM-DD
 type: daily-note
+related: "../../07 - Daily/Daily-Note.md"
 ---
 
 # YYYY-MM-DD
@@ -21,4 +22,3 @@ type: daily-note
 - Blocked:
 - Carry forward:
 - Memory or handoff maintenance needed:
-

@@ -1,7 +1,16 @@
+---
+tags:
+  - paios/projects
+  - paios/project/ai-appointment-assistant
+related:
+  - "Projects-MOC.md"
+  - "../README.md"
+  - "research/"
+---
 
 - **Minimal questions**:
     
-    - Explicitly tell Claude: “Ask for only one missing field at a time, in the shortest possible question, and stop once all required fields are known.”
+    - Explicitly tell Claude: "Ask for only one missing field at a time, in the shortest possible question, and stop once all required fields are known."
         
 - **Short answers by default**:
     
@@ -13,8 +22,7 @@
         
 - **No long explanations unless requested**:
     
-    - If a user asks “why” about time conversion or rules, Claude can give a brief explanation, but by default, it should just state the rule and move on.
+    - If a user asks "why" about time conversion or rules, Claude can give a brief explanation, but by default, it should just state the rule and move on.
 
 
-“Keep messages concise. For routine steps (asking for date/time, confirming details), prefer short questions and bullet lists. Avoid long explanations unless the user explicitly asks for more detail.”
-
+"Keep messages concise. For routine steps (asking for date/time, confirming details), prefer short questions and bullet lists. Avoid long explanations unless the user explicitly asks for more detail."

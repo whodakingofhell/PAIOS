@@ -3,9 +3,19 @@ title: "Deployment Guide — AI Appointment Assistant"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [project, deployment, guide, readme]
+tags:
+  - project
+  - deployment
+  - guide
+  - readme
+  - paios/projects
+  - paios/project/ai-appointment-assistant
 owner: "OpenCode"
 canonical: true
+related:
+  - "Business.md"
+  - "Product.md"
+  - "Vision.md"
 ---
 
 # AI Appointment Assistant — Deployment Guide

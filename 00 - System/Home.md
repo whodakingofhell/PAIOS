@@ -1,4 +1,12 @@
-﻿# PAIOS Home
+﻿---
+tags:
+  - paios/system
+related:
+  - "../README.md"
+  - "../me.md"
+---
+
+# PAIOS Home
 
 ## Start Here
 
@@ -16,4 +24,3 @@
 - Promote reviewed material into the correct domain.
 - Create persistent project context only for active or complex work.
 - Archive inactive information instead of deleting it.
-

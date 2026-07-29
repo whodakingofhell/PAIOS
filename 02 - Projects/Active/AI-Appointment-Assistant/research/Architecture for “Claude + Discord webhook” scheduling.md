@@ -1,3 +1,12 @@
+﻿---
+tags:
+  - paios/projects
+  - paios/project/ai-appointment-assistant
+related:
+  - "Projects-MOC.md"
+  - "../README.md"
+  - "research/"
+---
 
 For the first version (just appointments, no full CRM yet), a lean setup:
 
@@ -7,7 +16,7 @@ For the first version (just appointments, no full CRM yet), a lean setup:
         
     - It passes structured context to Claude:
         
-        - `user_id`, `platform` (Discord/web/other), `time_zone`, etc.
+        - user_id, platform (Discord/web/other), 	ime_zone, etc.
           
           **Claude (brain)**
 
@@ -17,7 +26,7 @@ For the first version (just appointments, no full CRM yet), a lean setup:
 
 **Backend (simple serverless on Vercel)**
 
-- Receives Claude’s final booking payload.
+- Receives Claude's final booking payload.
     
 - Sends a Discord webhook message to your chosen channel.
     

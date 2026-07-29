@@ -3,9 +3,18 @@ title: "AI Appointment Assistant — Business"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [project, business, monetization, cost]
+tags:
+  - project
+  - business
+  - monetization
+  - cost
+  - paios/projects
+  - paios/project/ai-appointment-assistant
 owner: "OpenCode"
 canonical: true
+related:
+  - "Product.md"
+  - "Vision.md"
 ---
 
 # Business Model

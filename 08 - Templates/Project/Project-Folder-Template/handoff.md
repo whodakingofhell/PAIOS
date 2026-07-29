@@ -1,4 +1,9 @@
-﻿# Project Handoff
+﻿---
+tags: [paios/templates]
+related: "../../../00 - System/Config/Obsidian-Setup.md"
+---
+
+# Project Handoff
 
 ## Current Objective
 
@@ -17,4 +22,3 @@
 ## Validation Status
 
 Replace and refresh this file. Preserve a dated snapshot before material compaction or transfer.
-

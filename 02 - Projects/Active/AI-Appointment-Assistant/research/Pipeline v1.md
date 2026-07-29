@@ -1,3 +1,13 @@
+---
+tags:
+  - paios/projects
+  - paios/project/ai-appointment-assistant
+related:
+  - "Projects-MOC.md"
+  - "../README.md"
+  - "research/"
+---
+
 ## Step 1 – Define the business rules (non-technical)
 
 Goal: Write down your rules in simple language so even non-technical people can understand.
@@ -19,7 +29,7 @@ Where to store:
 
 - Put these in Obsidian (for example: a note called `scheduling_rules.md`).
     
-- Use simple bullet points so they’re easy to read.
+- Use simple bullet points so they're easy to read.
     
 
 Why this matters:
@@ -27,9 +37,9 @@ Why this matters:
 - Research on appointment systems for small businesses shows that clear rules and user-friendly design are crucial for reliability and usability.ijcope+2
     
 
-## Step 2 – Build and test the “appointment brain” in Claude
+## Step 2 – Build and test the "appointment brain" in Claude
 
-Goal: Give Claude a clear, human-readable set of instructions (the “brain prompt”) for handling appointments.
+Goal: Give Claude a clear, human-readable set of instructions (the "brain prompt") for handling appointments.
 
 What to include in the prompt:
 
@@ -50,11 +60,11 @@ How to test:
 
 - Create a list of example conversations in Obsidian (e.g. `tests_appointment_brain.md`):
     
-    - “I’m from Manila, can I book today at 3 PM?”
+    - "I'm from Manila, can I book today at 3 PM?"
         
-    - “I’m in London. Can I book at 10 AM my time?”
+    - "I'm in London. Can I book at 10 AM my time?"
         
-    - “Can I book a 1-hour session?” (Expected: Claude explains 5–20 minute limit and offers options.)
+    - "Can I book a 1-hour session?" (Expected: Claude explains 5–20 minute limit and offers options.)
         
 - Run these scenarios with Claude and see if it behaves correctly.
     
@@ -85,14 +95,14 @@ Flow:
     
 - The backend sends a Discord message like:
     
-    - “New appointment: [Name], [Service], [PH time], [Duration], [Contact].”
+    - "New appointment: [Name], [Service], [PH time], [Duration], [Contact]."
         
 - Later you can add email notifications too.
     
 
 Why this matters:
 
-- Modern scheduling tools emphasize “instant notifications and confirmations” as a key feature for small businesses.adminify+2
+- Modern scheduling tools emphasize "instant notifications and confirmations" as a key feature for small businesses.adminify+2
     
 
 ## Step 4 – Document everything in Obsidian
@@ -112,13 +122,13 @@ Suggested notes:
 - `lessons_learned.md` – what went wrong and how you fixed it.
     
 
-Use Claude as a “critic”:
+Use Claude as a "critic":
 
 - After you update any document, ask Claude to:
     
     - Check for contradictions or missing details.
         
-    - Suggest edge cases you haven’t covered.## Step 5 – Design a simple, friendly interface
+    - Suggest edge cases you haven't covered.## Step 5 – Design a simple, friendly interface
 
 Goal: Make the system understandable and usable for non-technical users.
 
@@ -126,7 +136,7 @@ With Grok (or any design tool), focus on:
 
 - A simple chat box that says:
     
-    - “Tell us what appointment you’d like to book.”
+    - "Tell us what appointment you'd like to book."
         
 - One thing per screen / step:
     
@@ -134,9 +144,9 @@ With Grok (or any design tool), focus on:
         
 - Clear labels:
     
-    - “Your time” vs. “Philippines time”.
+    - "Your time" vs. "Philippines time".
         
-- No technical jargon (“webhook”, “token”, etc.).
+- No technical jargon ("webhook", "token", etc.).
     
 
 This kind of simple, outcome-focused interface has been shown to help non-technical users adopt AI tools more easily.iacis+2
