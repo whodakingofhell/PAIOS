@@ -5,6 +5,7 @@ tags:
 related:
   - "./Lessons-Ledger.md"
   - "../../02 - Projects/Projects-MOC.md"
+  - "../Knowledge-MOC.md"
 ---
 
 ### Webhook Notification Pattern (from AI-Appointment-Assistant)
@@ -32,3 +33,26 @@ related:
 - Stack: Next.js → Vercel
 - Key: public/ for static assets, root for app config, SYSTEM/ for architecture docs
 - Use case: Any Next.js web application
+
+### CI/CD Pipeline Pattern
+- Stages: lint → type → unit → build → SAST → integration → dependency scan → deploy staging → E2E → DAST → deploy production → smoke
+- Principles: fail fast, parallelize, cache deps, manual production gate
+- Tools: GitHub Actions, Docker, Playwright, OWASP ZAP, k6
+- Use case: Every application project
+
+### Testing Lifecycle Pattern
+- Pyramid: unit → integration → E2E → manual QA
+- Extended: SAST → DAST → dependency scan → pentest (security)
+- Performance: load → stress → endurance → spike
+- Use case: Quality gate for every project phase
+
+### UX Research + Design System Pattern
+- Research: discover (interviews) → concept (testing) → design (prototype testing) → launch (UAT) → post-launch (analytics)
+- Design system: tokens → components → documentation → versioning
+- Use case: Any product with a user interface
+
+### Monitoring & Observability Pattern
+- Three pillars: logs (structured, centralized), metrics (RED/USE), traces (distributed, OpenTelemetry)
+- Alerting: P0/P1/P2 severity, each with runbook
+- Dashboards: service, business, infrastructure, security
+- Use case: Every deployed application
