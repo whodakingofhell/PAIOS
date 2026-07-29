@@ -1,8 +1,14 @@
 ---
-tags: [paios/knowledge, paios/devops, automation, ci-cd, pipeline]
+tags:
+  - paios/knowledge
+  - paios/devops
+  - automation
+  - ci-cd
+  - pipeline
 related:
+  - "../Knowledge-MOC.md"
+  - "../Business/cost-map.md"
   - "DevOps/Automation-Engineering.md"
-  - "DevOps/DevOps.md"
   - "Product-Design/Content-Pipeline.md"
   - "Software-Development/04-Engineering.md"
 ---
@@ -201,3 +207,9 @@ n8n's built-in execution log + custom Slack alerts. For Phase 2+, add Grafana + 
 | `Frameworks\Content-Pipeline.md` | The 14-stage pipeline that automation orchestrates |
 | `Pipeline\n8n-workflows\` | The actual workflow JSON files |
 | `Pipeline\scripts\` | The standalone fallback scripts |
+
+## Applied in PAIOS Projects
+
+**AI-Appointment-Assistant** — The n8n workflow for automated booking confirmation was the direct predecessor to this automation framework. When a patient booked via SMS, the workflow triggered: parse the SMS with Claude → check Supabase for availability → confirm the slot → send a Discord webhook notification to the admin channel. This "webhook → process → notify" pattern is the same chain pattern documented in the trigger patterns section. The automated reminder workflow (SMS sent 24h before appointment) ran on a daily cron schedule, inspiring the cron trigger pattern above.
+
+**deploy-v2** — The Vercel auto-deploy workflow (`devops—deploy—vercel`) was the first real-world n8n webhook workflow in production. When a GitHub webhook fired on `main` merge, n8n triggered a Vercel deploy hook that rebuilt and deployed the Next.js app. The success/failure alerting via Discord webhooks validated the "Alert on failure, not on success" principle. This workflow became the template for workflow #6 in the inventory.

@@ -1,8 +1,13 @@
 ---
-tags: [paios/knowledge, paios/software-development, documentation, technical-writing]
+tags:
+  - paios/knowledge
+  - paios/documentation
+  - paios/software-development
+  - technical-writing
 related:
+  - "../Knowledge-MOC.md"
+  - "../AI/08-AI-Knowledge.md"
   - "Product-Design/Content-Pipeline.md"
-  - "AI/08-AI-Knowledge.md"
   - "Product-Design/02-Product.md"
 ---
 
@@ -205,3 +210,9 @@ For any system or project, the following must be documented:
 | `08-AI-Knowledge\AI-Knowledge.md` | Knowledge base is a form of documentation |
 | `Project\Changelog.md` | Per-project changelog template |
 | `Project\Documentation.md` | Per-project documentation spec |
+
+## Applied in PAIOS Projects
+
+**PAIOS Vault (this knowledge base)** — This documentation section is meta: the PAIOS vault itself is the most comprehensive example of the documentation standards defined here. Every file has YAML frontmatter with `tags` and `related` fields for cross-referencing. The `PROJECT-CONTEXT.md` files in each project are READMEs following the standard template. The SYSTEM docs (like `SYSTEM/MASTER_REFERENCE.md`) contain ADRs documenting architectural decisions. The vault is versioned on GitHub, reviewed through PRs, and searchable via Obsidian's built-in grep — meeting every "Documentation-as-Code" principle.
+
+**AI-Appointment-Assistant** — The `PROJECT-CONTEXT.md` for this project was the template that inspired the README standard in this section. The project's `CHANGELOG.md` follows the "Keep a Changelog" format with every release documented. The inline code comments follow the "explain WHY, not WHAT" principle — for example, the webhook handler has a comment explaining *why* SMS replies are idempotent (to prevent double-booking), not *what* the code does.

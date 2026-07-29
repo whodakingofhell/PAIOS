@@ -3,12 +3,19 @@ title: "OS Section 12 — Roadmap"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [os-section, section-12, roadmap, paios/knowledge, paios/software-development]
+tags:
+  - os-section
+  - section-12
+  - roadmap
+  - paios/knowledge
+  - paios/roadmap
+  - paios/software-development
 owner: "OpenCode"
 canonical: true
 related:
-  - "Software-Development/00-Vision.md"
-  - "Product-Design/02-Product.md"
+  - "../Knowledge-MOC.md"
+  - "00-Vision.md"
+  - "02-Product.md"
   - "Business/01-Business.md"
 ---
 
@@ -230,3 +237,9 @@ Revenue
 
 - **SSoT:** This section is defined here. All downstream decisions reference it.
 - **DRY:** Content not duplicated in other sections.
+
+## Applied in PAIOS Projects
+
+**AI-Appointment-Assistant** — The product lifecycle for this project (ideation → MVP → iteration → scale → lessons learned) provided the real-world template for the phased roadmap structure. The initial MVP shipped in 2 weeks (matching "Phase 1: Foundation" velocity targets), the first 100 users were acquired in 6 weeks, and the pivot from SMS-only to SMS+Calendar sync defined Phase 2. Lessons learned from this project — particularly that analytics infrastructure should be built before scaling — directly informed the critical path items (item #2: "Analytics must be in place before optimization"). The full project lifecycle is documented in `Projects-MOC.md`.
+
+**deploy-v2** — The deployment infrastructure project followed a similar phased approach: foundation (basic CI/CD), growth (preview deploys, zero-downtime), scale (multi-environment, canary releases). Its dependency mapping (CI must work before preview deploys, preview deploys before zero-downtime) validated the Dependencies Map section. The project's velocity data — consistently completing 80%+ of sprint commitments after the first 2 sprints — informed the sprint completion rate target.

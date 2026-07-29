@@ -82,3 +82,18 @@ Route curated technical, research, product, business, and learning knowledge.
 - Store durable synthesis, not raw source dumps.
 - New content goes through [[../06 - Inbox/Inbox.md]] → processed to relevant Knowledge area.
 
+## Health & Maintenance
+
+```dataview
+TABLE tags, related, file.etags as "All Tags"
+FROM "05 - Knowledge"
+SORT file.name
+```
+
+```dataview
+TABLE length(related) as "Related Links", file.etags as "Tags"
+FROM "05 - Knowledge"
+WHERE length(related) = 0 OR length(file.etags) = 0
+SORT file.name
+```
+

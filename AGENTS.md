@@ -32,11 +32,19 @@ related:
 
 ## Task Bundles
 
+Refer to `00 - System/Config/ai-context-manifest.yaml` for full bundle definitions. Short-form:
+
 - Quick task: `AGENTS.md`, `me.md`.
 - Normal active work: add root `memory.md` and `handoff.md`.
-- Active project: add `02 - Projects/Active/<Project>/PROJECT-CONTEXT.md`; add project `memory.md`/`handoff.md` only when present and needed.
+- Active project: load matching project entry from manifest; add project `memory.md`/`handoff.md` only when present.
+- New project: load `new_project` bundle from manifest (template + patterns + lessons).
 - Architecture/design/product: load only the matching root authority and relevant project context.
 - Business: load `01 - Business/Business-MOC.md` and the exact required file.
+
+## Reference Files
+
+- `05 - Knowledge/References/Lessons-Ledger.md` — Cross-project lessons learned
+- `05 - Knowledge/References/Project-Patterns.md` — Reusable architecture patterns
 
 ## Default Exclusions
 

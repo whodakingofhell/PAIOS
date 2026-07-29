@@ -1,13 +1,18 @@
 ---
-tags: [paios/knowledge, paios/architecture, system-design, infrastructure]
+tags:
+  - paios/knowledge
+  - paios/architecture
+  - system-design
+  - infrastructure
 related:
+  - "../Knowledge-MOC.md"
+  - "../Software-Development/04-Engineering.md"
+  - "../DevOps/06-Security.md"
   - "Architecture/Architecture.md"
   - "Architecture/SECURITY_ARCHITECTURE.md"
-  - "Software-Development/04-Engineering.md"
   - "Software-Development/Backend.md"
   - "Software-Development/Frontend.md"
   - "Software-Development/Database.md"
-  - "DevOps/DevOps.md"
 ---
 
 # 03 — Architecture
@@ -215,3 +220,11 @@ All integrations route through n8n workflows. Each tool has a dedicated node typ
 | `07-Automation\Automation.md` | n8n automation implements this architecture |
 | `Project\Architecture.md` | Per-project architecture spec |
 | `integrations\*` | Per-tool setup guides |
+
+## Applied in PAIOS Projects
+
+**AI-Appointment-Assistant** — The webhook architecture used in this project (Twilio SMS → Supabase Edge Function → Claude API → Calendar API) directly validated the "loose coupling" principle. Each service could be swapped independently: Twilio for Vonage, Supabase for Firebase, Claude for GPT-4 — without touching the others. The n8n-based orchestration pattern documented here was inspired by the webhook routing logic from this project.
+
+**deploy-v2** — This Next.js project's architecture (`SYSTEM/MASTER_REFERENCE.md`) demonstrated the "stateless services" principle through its serverless function design. Each API route was an independent function with no shared memory state, exactly matching the architecture principle. The Vercel + GitHub deployment pattern in this document is the same pattern used by deploy-v2 for zero-downtime preview deploys.
+
+**PhilippineSkyland** — The system design for PhilippineSkyland (property listing management with geospatial queries) validated the "JSON as the lingua franca" principle — all inter-service communication used JSON payloads between the Node.js backend and PostgreSQL with PostGIS extensions.

@@ -1,10 +1,16 @@
 ---
-tags: [paios/knowledge, paios/devops, paios/security, security, compliance, devsecops]
+tags:
+  - paios/knowledge
+  - paios/security
+  - paios/devops
+  - security
+  - compliance
+  - devsecops
 related:
+  - "../Knowledge-MOC.md"
+  - "../Architecture/SECURITY_ARCHITECTURE.md"
+  - "../Software-Development/Security.md"
   - "DevOps/Security.md"
-  - "Architecture/SECURITY_ARCHITECTURE.md"
-  - "Software-Development/Security.md"
-  - "DevOps/DevOps.md"
   - "Software-Development/05-QA-Framework.md"
 ---
 
@@ -355,3 +361,11 @@ Get-CimInstance Win32_StartupCommand | Select Name, Command
 | `07-Automation\Automation.md` | Automation workflows must follow security rules |
 | `Project\Security.md` | Per-project security spec |
 | `integrations\*` | Per-tool security setup notes |
+
+## Applied in PAIOS Projects
+
+**AI-Appointment-Assistant** — The webhook security implementation for this project directly informed the OWASP compliance section. Incoming SMS webhooks from Twilio were validated using HMAC signature verification (A03 injection prevention), user input was sanitized before database queries (parameterized SQL), and rate limiting was applied per phone number to prevent abuse (threat model API abuse mitigation). The secrets management rule "No secret in n8n workflow JSON" was hard-earned when a Twilio auth token was accidentally embedded in a workflow during early development.
+
+**deploy-v2** — The `SECURITY_ARCHITECTURE.md` in deploy-v2 documented the zero-trust deployment model where every deploy is cryptographically signed and verified. The project's pre-commit hooks using `detect-secrets` caught two accidental API key commits before they reached GitHub, validating the secret leakage mitigation strategy. The rotation schedule in this document matches deploy-v2's actual key rotation cadence.
+
+**PhilippineSkyland** — The security assessment (`PROJECT-PhilippineSkyland-Security.md`) for this real-estate platform identified that property images stored in public S3 buckets were accessible without authentication. This finding directly influenced the OWASP A01 (Broken Access Control) mitigation in this document. The project also tested the incident response plan when a compromised WordPress plugin led to a HIGH-severity alert — contained in under 30 minutes.

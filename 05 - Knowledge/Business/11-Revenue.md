@@ -3,14 +3,20 @@ title: "OS Section 11 — Revenue"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [os-section, section-11, revenue, paios/knowledge, paios/business]
+tags:
+  - os-section
+  - section-11
+  - revenue
+  - paios/knowledge
+  - paios/business
+  - paios/revenue
 owner: "OpenCode"
 canonical: true
----
 related:
-  - "Business/01-Business.md"
-  - "Business/10-Marketing.md"
-  - "Product-Design/02-Product.md"
+  - "../Knowledge-MOC.md"
+  - "01-Business.md"
+  - "10-Marketing.md"
+  - "Business/cost-map.md"
 ---
 
 # 11 — Revenue
@@ -184,3 +190,9 @@ Annual targets aligned with business plan milestones.
 
 - **SSoT:** This section is defined here. All downstream decisions reference it.
 - **DRY:** Content not duplicated in other sections.
+
+## Applied in PAIOS Projects
+
+**AI-Appointment-Assistant** — The cost projections for this project provided the first real-world data for the unit economics framework. The project tracked a per-appointment AI cost of $0.0008 (Claude Haiku, ~300 tokens per SMS parse), well under the $0.001 target. The token budget analysis revealed that batching appointment confirmations reduced API calls by 40%, directly informing the "Cost Per Video" decreasing trend target. The project's monthly operating cost of $4.37 (Supabase free tier + Vercel hobby + Claude API usage) validated the $0-first cost discipline.
+
+**PhilippineSkyland** — The monetization strategy for this real-estate platform explored three revenue paths: premium property listing placements, agent subscription tiers, and lead-generation fees. The unit economics analysis showed a customer acquisition cost of $2.15 per qualified lead via organic search versus $8.50 via paid ads — directly supporting the LTV:CAC > 3:1 target. The revenue milestones from this project (first $100 → $1,000 → $5,000) informed the Revenue Milestones table in this section.

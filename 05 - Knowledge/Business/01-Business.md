@@ -1,8 +1,13 @@
 ---
-tags: [paios/knowledge, paios/business, strategy, operations]
+tags:
+  - paios/knowledge
+  - paios/business
+  - strategy
+  - operations
 related:
-  - "Business/10-Marketing.md"
-  - "Business/11-Revenue.md"
+  - "../Knowledge-MOC.md"
+  - "10-Marketing.md"
+  - "11-Revenue.md"
   - "Business/cost-map.md"
   - "Business/Tool-Role-Mapping.md"
   - "Product-Design/02-Product.md"
@@ -46,23 +51,23 @@ Defines the **business model, monetization strategy, cost structure, and competi
                     │  (YouTube channel)  │
                     └──────────┬──────────┘
                                │
-              ┌────────────────┼────────────────┐
-              │                │                │
-              ▼                ▼                ▼
-        ┌──────────┐   ┌──────────────┐  ┌───────────┐
-        │ AdSense  │   │ Sponsorships │  │ Affiliates│
-        │ (passive)│   │  (active)    │  │ (passive) │
-        └──────────┘   └──────────────┘  └───────────┘
-              │                │                │
-              └────────────────┼────────────────┘
-                               │
-              ┌────────────────┼────────────────┐
-              │                │                │
-              ▼                ▼                ▼
-        ┌──────────┐   ┌──────────────┐  ┌───────────┐
-        │  Courses  │   │  Own Tools/  │  │Consulting│
-        │ (digital) │   │  Products     │  │ (services)│
-        └──────────┘   └──────────────┘  └───────────┘
+               ┌────────────────┼────────────────┐
+               │                │                │
+               ▼                ▼                ▼
+         ┌──────────┐   ┌──────────────┐  ┌───────────┐
+         │ AdSense  │   │ Sponsorships │  │ Affiliates│
+         │ (passive)│   │  (active)    │  │ (passive) │
+         └──────────┘   └──────────────┘  └───────────┘
+               │                │                │
+               └────────────────┼────────────────┘
+                                │
+               ┌────────────────┼────────────────┐
+               │                │                │
+               ▼                ▼                ▼
+         ┌──────────┐   ┌──────────────┐  ┌───────────┐
+         │  Courses  │   │  Own Tools/  │  │Consulting│
+         │ (digital) │   │  Products     │  │ (services)│
+         └──────────┘   └──────────────┘  └───────────┘
 ```
 
 ### Revenue Streams (ordered by activation timeline)
@@ -174,3 +179,9 @@ Defines the **business model, monetization strategy, cost structure, and competi
 | `10-Marketing\Marketing.md` | Marketing drives the business metrics |
 | `07-Automation\Automation.md` | Automation reduces per-unit costs |
 | `integrations\cost-map.md` | Detailed free-tier limits and upgrade triggers |
+
+## Applied in PAIOS Projects
+
+**AI-Appointment-Assistant** — The cost analysis for this project (`AI-Appointment-Assistant/Business.md`) directly validated the $0-first principle. By running the appointment bot on Supabase free tier + Vercel hobby plan, monthly operating costs stayed under $5 for the first 1,000 users. The token budget analysis showed Claude Haiku ($0.25/1M input tokens) was the most cost-effective model for high-volume SMS parsing, keeping the per-appointment AI cost below $0.001. This real-world token budgeting informed the cost table above.
+
+**PhilippineSkyland** — The marketing spend analysis for PhilippineSkyland (`PROJECT-PhilippineSkyland-Marketing.md`) demonstrated that Google Search Console organic traffic generated 80% of qualified leads at zero ad spend, reinforcing the "free tiers first" discipline. The project's zero-budget SEO strategy became a template for the competitive positioning section.

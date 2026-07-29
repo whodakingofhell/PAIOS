@@ -1,10 +1,15 @@
 ---
-tags: [paios/knowledge, paios/product-design, product-management, lifecycle]
+tags:
+  - paios/knowledge
+  - paios/product-design
+  - product-management
+  - lifecycle
 related:
+  - "../Knowledge-MOC.md"
+  - "../Software-Development/00-Vision.md"
+  - "Product-Lifecycle.md"
   - "Product-Design/Content-Pipeline.md"
   - "Product-Design/Feature-Score-Rubric.md"
-  - "Product-Design/Product-Lifecycle.md"
-  - "Software-Development/00-Vision.md"
   - "Business/01-Business.md"
   - "Software-Development/12-Roadmap.md"
 ---
@@ -155,3 +160,9 @@ Defines **what we build** — the YouTube channel itself as a product, plus any 
 | `12-Roadmap\Roadmap.md` | Roadmap sequences the product builds |
 | `Frameworks\Content-Pipeline.md` | Pipeline produces the primary product (videos) |
 | `Project\Product.md` | Per-project product spec template |
+
+## Applied in PAIOS Projects
+
+**AI-Appointment-Assistant** — This project's product document (`AI-Appointment-Assistant/Product.md`) defined the MVP as a simple SMS-based appointment booking flow (no dashboard, no calendar sync, no analytics). The MVP shipped in 2 weeks — exactly matching the time-box rule above. Post-MVP iterations added Google Calendar sync and an admin dashboard. The RICE framework was applied retrospectively: Calendar sync scored high (Reach=8, Impact=4, Confidence=90%, Effort=3 days → RICE=9.6) and was prioritized over analytics (RICE=4.2).
+
+**deploy-v2** — The master reference doc (`SYSTEM/MASTER_REFERENCE.md`) for deploy-v2 documents the product decisions for a zero-downtime deployment system. Its release cadence (weekly deploys with rollback capability) validated the per-milestone release pattern in this section. The product's feature backlog was managed with the same RICE scoring now codified here.

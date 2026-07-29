@@ -1,8 +1,14 @@
 ---
-tags: [paios/knowledge, paios/software-development, paios/qa, quality-assurance, testing]
+tags:
+  - paios/knowledge
+  - paios/qa
+  - paios/software-development
+  - quality-assurance
+  - testing
 related:
-  - "Software-Development/QA.md"
-  - "Software-Development/QA-Criticism-Framework.md"
+  - "../Knowledge-MOC.md"
+  - "QA.md"
+  - "QA-Criticism-Framework.md"
   - "Product-Design/Feature-Score-Rubric.md"
   - "Software-Development/04-Engineering.md"
   - "DevOps/06-Security.md"
@@ -206,3 +212,9 @@ SCORECARD: (see Feature-Score-Rubric.md)
 | `04-Engineering\Engineering.md` | Engineering produces what QA reviews |
 | `06-Security\Security.md` | Security is a hard gate criterion |
 | `Team\QA.md` | QA team persona and responsibilities |
+
+## Applied in PAIOS Projects
+
+**AI-Appointment-Assistant** — The QA review process (`AI-Appointment-Assistant/QA-Review-v1.md`) was the first real-world test of this framework. During Gate 1 review, the multi-expert critique framework caught a design flaw: the initial architecture assumed synchronous SMS replies, but the edge case of concurrent appointment requests from the same phone number was unhandled. This was flagged under "Missing Features" in the QA scan and fixed before any code was written — exactly the purpose of Gate 1.
+
+**deploy-v2** — The SYSTEM-level reviews for deploy-v2 used a multi-expert critique pattern (Security, DevOps, Backend reviewers each running the QA Criticism Framework independently) that directly inspired the auto-injected criticism block above. The combined scorecard approach — where each dimension must score ≥ 8.0 — was validated when a deployment runbook scored 7.5 on "Documentation Gaps" and was rejected at Gate 2 until the runbook was updated.

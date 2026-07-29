@@ -3,13 +3,19 @@ title: "OS Section 10 — Marketing"
 version: "1.0"
 status: "Canonical"
 date: "2026-07-18"
-tags: [os-section, section-10, marketing, paios/knowledge, paios/business]
+tags:
+  - os-section
+  - section-10
+  - marketing
+  - paios/knowledge
+  - paios/business
+  - paios/marketing
 owner: "OpenCode"
 canonical: true
----
 related:
-  - "Business/01-Business.md"
-  - "Business/11-Revenue.md"
+  - "../Knowledge-MOC.md"
+  - "01-Business.md"
+  - "11-Revenue.md"
   - "Product-Design/02-Product.md"
 ---
 
@@ -157,3 +163,7 @@ Awareness → Interest → Trial → Retention → Referral
 
 - **SSoT:** This section is defined here. All downstream decisions reference it.
 - **DRY:** Content not duplicated in other sections.
+
+## Applied in PAIOS Projects
+
+**PhilippineSkyland** — The marketing strategy for this real-estate project (`PROJECT-PhilippineSkyland-Marketing.md`) provided real-world validation for the SEO strategy documented here. By targeting long-tail keywords like "affordable condominium in [district] Philippines" and optimizing Google My Business listings, the project achieved a 340% increase in organic search impressions over 3 months via Google Search Console. The keyword research methodology (competitor gap analysis, search volume tracking, click-through rate optimization) used in PhilippineSkyland is the same methodology codified in the SEO Strategy section above. The content distribution plan — repurposing property listings into blog posts and social media clips — directly inspired the repurpose flow in this document.

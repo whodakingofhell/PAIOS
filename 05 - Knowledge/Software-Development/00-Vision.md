@@ -1,9 +1,14 @@
 ---
-tags: [paios/knowledge, paios/software-development, vision, strategy]
+tags:
+  - paios/knowledge
+  - paios/vision
+  - paios/software-development
+  - strategy
 related:
-  - "Software-Development/12-Roadmap.md"
+  - "../Knowledge-MOC.md"
+  - "02-Product.md"
+  - "12-Roadmap.md"
   - "Business/01-Business.md"
-  - "Product-Design/02-Product.md"
   - "AI/MASTER-FRAMEWORK.md"
 ---
 
@@ -122,3 +127,11 @@ Defines the **north star** for the entire operation — the channel mission, lon
 | `12-Roadmap\Roadmap.md` | Roadmap milestones map to vision horizons |
 | `Frameworks\Content-Pipeline.md` | Content pipeline produces content that serves the vision |
 | `Project\Vision.md` | Per-project vision must align with this OS-level vision |
+
+## Applied in PAIOS Projects
+
+**AI-Appointment-Assistant** — This project's vision document (`AI-Appointment-Assistant/Vision.md`) directly informed the OS-level vision template. The assistant's goal of automating medical appointment booking via AI aligns with the core value "Automate relentlessly" — a repetitive manual process (phone-based scheduling) was replaced with an automated pipeline. The product spec (`AI-Appointment-Assistant/Product.md`) traces back to the vision of reducing no-show rates through intelligent reminders.
+
+**deploy-v2** — The deployment pipeline vision for deploy-v2 (zero-downtime, automated rollbacks) validated the "Lowest viable cost" and "Security by default" principles documented here. Its architecture decisions informed the 1-year horizon target of a fully automated content pipeline.
+
+**PhilippineSkyland** — The real-estate system design for PhilippineSkyland reinforced the "Build in public" value — every architectural trade-off was documented in Obsidian and shared with the team, mirroring the vision's commitment to transparency.

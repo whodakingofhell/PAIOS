@@ -1,12 +1,16 @@
 ---
-tags: [paios/knowledge, paios/software-development, engineering, development]
+tags:
+  - paios/knowledge
+  - paios/software-development
+  - engineering
+  - development
 related:
-  - "Architecture/03-Architecture.md"
+  - "../Knowledge-MOC.md"
+  - "05-QA-Framework.md"
+  - "../Architecture/03-Architecture.md"
   - "Software-Development/Backend.md"
   - "Software-Development/Frontend.md"
   - "Software-Development/Database.md"
-  - "Software-Development/05-QA-Framework.md"
-  - "DevOps/DevOps.md"
 ---
 
 # 04 — Engineering
@@ -214,3 +218,9 @@ Pipeline scripts (`Pipeline\scripts\0X-*.py`) have their own validation:
 | `07-Automation\Automation.md` | Automation is engineered work |
 | `Project\Backend.md`, `Project\Frontend.md` | Per-project engineering specs |
 | `Project\Testing.md` | Per-project test strategy |
+
+## Applied in PAIOS Projects
+
+**AI-Appointment-Assistant** — This full-stack Node.js project (Supabase + Vercel + Twilio) was the first real implementation of the engineering standards documented here. The project used ESLint + Prettier for JS/TS linting, Pytest for edge function testing, and GitHub Flow branching with squash-merges. The technical debt register was born from this project's real issue: an unoptimized SQL query for appointment lookups that was tagged `technical-debt` and resolved in sprint 2 with a composite index.
+
+**deploy-v2** — Built on Next.js 14 with TypeScript, this project validated the "Automate everything" principle. Every commit to `main` triggered a Vercel auto-deploy, and the CI pipeline (lint → type-check → test → build → deploy) ran in under 4 minutes. The project's `.github/workflows/ci.yml` became the template for the CI/CD section above.

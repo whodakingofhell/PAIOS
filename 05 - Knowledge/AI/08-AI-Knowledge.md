@@ -1,10 +1,16 @@
 ---
-tags: [paios/knowledge, paios/ai, knowledge-management, prompt-engineering, rag]
+tags:
+  - paios/knowledge
+  - paios/ai
+  - knowledge-management
+  - prompt-engineering
+  - rag
 related:
-  - "AI/AI-Engineering.md"
+  - "../Knowledge-MOC.md"
+  - "AI-Engineering.md"
+  - "Claude Master Prompt - Online Seller Support and Retail Assistant.md"
   - "AI/MASTER-FRAMEWORK.md"
   - "AI/Claude-Handoff.md"
-  - "AI/Claude Master Prompt - Online Seller Support and Retail Assistant.md"
   - "Software-Development/09-Documentation.md"
 ---
 
@@ -296,3 +302,9 @@ When answering questions or planning content:
 | `Frameworks\Content-Pipeline.md` | Pipeline produces knowledge that feeds back |
 | `Pipeline\prompts\` | The actual prompt files used in the pipeline |
 | `Pipeline\scripts\` | Scripts that read/write knowledge artifacts |
+
+## Applied in PAIOS Projects
+
+**AI-Appointment-Assistant** — The Claude master prompt (`AI-Appointment-Assistant/Claude Master Prompt - Online Seller Support and Retail Assistant.md`) and its companion `Claude-Brain-Prompt.md` were the first production-grade prompts that informed the prompt versioning standard in this section. The research folder (`AI-Appointment-Assistant/research/`) contains the original RAG experiments where Obsidian vault notes were injected into Claude's context to improve appointment-slot suggestions — directly validating the "Ground everything" principle. The token budget table in this document evolved from tracking actual API consumption during this project's pipeline.
+
+**deploy-v2** — The `MASTER-FRAMEWORK.md` document from this project defined the context layering approach (system → task → injected → criticism → examples) that is now codified as the 5-layer context strategy here. The prompt scoring methodology (accuracy, consistency, token efficiency, reproducibility) was first tested on deploy-v2's deployment-prompting workflows.
