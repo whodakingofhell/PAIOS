@@ -67,6 +67,15 @@ related:
 - public/ vs root separation for static assets
 - SYSTEM directory for architecture decisions keeps project context clean
 
+**Citadel**
+- Loopback addresses must never be auto-blocked (a security console must not lock its own machine out)
+- `http.server` lowercases header names — any header-based check (CSRF, content-type) must be case-insensitive or it silently breaks on the real server
+- The browser's own `Origin`/`Referer` headers are not attacker input — an SSRF rule must exclude them or the app's own buttons get flagged
+- Fail-closed beats fail-open: refuse the action if you cannot record the security decision
+- OUI (MAC vendor) lookup turns "unknown device" alarms into a useful list with one offline data file
+- Health scores must explain exactly what is dragging them down, or they are a dashboard lie
+- A local deterministic advisor fallback keeps the UI alive even when no LLM is configured
+
 **PhilippineSkyland**
 - Google Search Console integration needs documentation
 - Security architecture should be documented per-domain

@@ -4,6 +4,7 @@ tags:
   - paios/security
 related:
   - "Penetration-Testing.md"
+  - "Citadel-Security-Patterns.md"
   - "../DevOps/06-Security.md"
   - "../Software-Development/Security.md"
   - "../Architecture/SECURITY_ARCHITECTURE.md"

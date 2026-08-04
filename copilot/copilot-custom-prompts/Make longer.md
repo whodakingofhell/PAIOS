@@ -8,6 +8,7 @@ tags:
   - paios/copilot
 related:
   - ../../AGENTS.md
+  - ./README.md
 ---
 Expand {} to twice its length by:
     1. Adding relevant details and examples

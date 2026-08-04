@@ -8,6 +8,7 @@ tags:
   - paios/copilot
 related:
   - ../../AGENTS.md
+  - ./README.md
 ---
 Convert {} into a Twitter thread following these rules:
     1. Each tweet must be under 240 characters

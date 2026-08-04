@@ -8,6 +8,7 @@ tags:
   - paios/copilot
 related:
   - ../../AGENTS.md
+  - ./README.md
 ---
 Explain {} in simple terms that a 5-year-old would understand:
     1. Use basic vocabulary

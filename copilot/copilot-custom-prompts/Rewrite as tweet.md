@@ -8,6 +8,7 @@ tags:
   - paios/copilot
 related:
   - ../../AGENTS.md
+  - ./README.md
 ---
 Rewrite {} as a single tweet with these requirements:
     1. Maximum 280 characters

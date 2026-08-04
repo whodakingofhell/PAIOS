@@ -8,6 +8,7 @@ tags:
   - paios/copilot
 related:
   - ../../AGENTS.md
+  - ./README.md
 ---
 
 Based on the YouTube video information and transcript provided in the context, generate a complete Obsidian note in the following format.

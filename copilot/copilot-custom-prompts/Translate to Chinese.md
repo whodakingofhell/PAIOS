@@ -8,6 +8,7 @@ tags:
   - paios/copilot
 related:
   - ../../AGENTS.md
+  - ./README.md
 ---
 Translate {} into Chinese:
     1. Preserve the meaning and tone

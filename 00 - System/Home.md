@@ -24,3 +24,11 @@ related:
 - Promote reviewed material into the correct domain.
 - Create persistent project context only for active or complex work.
 - Archive inactive information instead of deleting it.
+
+## System & Policies
+
+- [[Metadata-Standards]] — how frontmatter/`ai_access`/`review_status` are used
+- [[Naming-Conventions]] — folder, file, and tag naming rules
+- [[Archive-Policy]] — what gets archived and where
+- [[Obsidian-Setup]] — vault configuration, plugins, tags
+- [[../05 - Knowledge/Knowledge-MOC|Knowledge Map of Content]]

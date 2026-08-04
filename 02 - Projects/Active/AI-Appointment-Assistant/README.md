@@ -177,3 +177,17 @@ Browser → Vercel CDN → Serverless Function → Supabase
 
 - **SSoT:** This guide is the canonical deployment reference
 - **DRY:** Not duplicated elsewhere
+
+## Research & Design Notes
+
+- [[research/Product Brief - AI Appointment Assistant for Online Sellers]] — full specification
+- [[research/Should know and do]] — the brain's job list
+- [[research/Pipeline v1]] — step-by-step implementation plan
+- [[research/Architecture for “Claude + Discord webhook” scheduling]] — v1 architecture
+- [[research/Claude Master Prompt – Online Seller Support & Retail Assistant]] — support + retail + seller coach modes
+- [[research/What good AI appointment schedulers actually do]] — research notes
+- [[research/Claude Appointment Brain - v1]] — appointment scheduling brain (v1)
+- [[research/Token Efficiency]] — keep conversations cheap
+- [[research/Vision]] — what the assistant does, plain language
+- [[research/Timezone]] — Asia/Manila conversion rules
+- [[research/Decision Support Tool]] — how to challenge and refine docs

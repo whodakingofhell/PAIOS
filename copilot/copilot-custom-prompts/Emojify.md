@@ -8,6 +8,7 @@ tags:
   - paios/copilot
 related:
   - ../../AGENTS.md
+  - ./README.md
 ---
 Add relevant emojis to enhance {}. Follow these rules:
     1. Insert emojis at natural breaks in the text

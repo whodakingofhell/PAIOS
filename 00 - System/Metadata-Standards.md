@@ -2,7 +2,9 @@
 tags:
   - paios/system
 related:
-  - "../05 - Knowledge/Metadata/Metadata-Standards.md"
+  - "Naming-Conventions.md"
+  - "Config/Obsidian-Setup.md"
+  - "../05 - Knowledge/Knowledge-MOC.md"
 ---
 
 # Metadata Standards

@@ -22,7 +22,8 @@ Route initiatives through Incubating, Active, On-Hold, Completed, and Archive st
 |---------|------|-------------|
 | **AI-Appointment-Assistant** | `Active/AI-Appointment-Assistant/` | Full-stack AI scheduling app (Node.js/Supabase/Vercel) |
 | **deploy-v2** | `Active/deploy-v2/` | Next.js 14 web application |
-| **PhilippineSkyland** | `Active/PhilippineSkyland/` | Real estate/development project |
+| **PhilippineSkyland** | `Active/PhilippineSkyland/` | Real estate/development project — [[Active/PhilippineSkyland/PROJECT-PhilippineSkyland-Architecture|Architecture]], [[Active/PhilippineSkyland/PROJECT-PhilippineSkyland-QA|QA]], [[Active/PhilippineSkyland/PROJECT-PhilippineSkyland-Marketing|Marketing]], [[Active/PhilippineSkyland/PROJECT-PhilippineSkyland-Security|Security]], [[Active/PhilippineSkyland/PROJECT-PhilippineSkyland-ProsCons|Pros/Cons]], [[Active/PhilippineSkyland/PROJECT-PhilippineSkyland-GoogleSearchConsole-Guide|GSC Guide]] |
+| **Citadel** | `Active/Citadel/` | Self-monitoring zero-trust security console (Python 3.14, loopback-only WAF/MFA/audit) — see [[Active/Citadel/README]] |
 
 ## Lifecycle
 
@@ -47,6 +48,7 @@ Create `PROJECT-CONTEXT.md`, `DECISIONS.md`, `memory.md`, and `handoff.md` only 
 - `Active/`
 - `Incubating/`
 - `On-Hold/`
+- ADR template: [[Architecture-Decision-Record]]
 
 ## Archive Guidance
 

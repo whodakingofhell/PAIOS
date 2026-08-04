@@ -38,6 +38,7 @@ related:
   - "References/RECOMMENDATIONS.md"
   - "Security/Penetration-Testing.md"
   - "Security/Security-Checklist.md"
+  - "Security/Citadel-Security-Patterns.md"
   - "Software-Development/00-Vision.md"
   - "Software-Development/04-Engineering.md"
   - "Software-Development/05-QA-Framework.md"
@@ -71,7 +72,7 @@ Route curated technical, research, product, business, and learning knowledge.
 | **DevOps** | [[DevOps/06-Security.md]], [[DevOps/07-Automation.md]], [[DevOps/Automation-Engineering.md]], [[DevOps/CI-CD-Pipeline.md]], [[DevOps/DevOps.md]], [[DevOps/Monitoring-Observability.md]], [[DevOps/Performance-Testing.md]] |
 | **Product Design** | [[Product-Design/02-Product.md]], [[Product-Design/Content-Pipeline.md]], [[Product-Design/Feature-Score-Rubric.md]], [[Product-Design/Product-Lifecycle.md]], [[Product-Design/UI-Design-System.md]], [[Product-Design/UX-Research.md]] |
 | **References** | [[References/Lessons-Ledger.md]], [[References/MASTER_REFERENCE.md]], [[References/EXPERT_CRITIQUES.md]], [[References/EXPERT_CRITIQUES_CURRENT_PROJECT.md]], [[References/Project-Patterns.md]], [[References/RECOMMENDATIONS.md]], [[References/AI-Ops-Vault-Manifest.md]] |
-| **Security** | [[Security/Penetration-Testing.md]], [[Security/Security-Checklist.md]] |
+| **Security** | [[Security/Penetration-Testing.md]], [[Security/Security-Checklist.md]], [[Security/Citadel-Security-Patterns.md]] |
 | **Software Development** | [[Software-Development/00-Vision.md]], [[Software-Development/04-Engineering.md]], [[Software-Development/05-QA-Framework.md]], [[Software-Development/09-Documentation.md]], [[Software-Development/12-Roadmap.md]], [[Software-Development/Accessibility.md]], [[Software-Development/API-Design.md]], [[Software-Development/Backend.md]], [[Software-Development/Database.md]], [[Software-Development/Frontend.md]], [[Software-Development/Project-Phases.md]], [[Software-Development/QA.md]], [[Software-Development/Security.md]], [[Software-Development/QA-Criticism-Framework.md]], [[Software-Development/Testing-Lifecycle.md]] |
 
 ## Category Cross-References

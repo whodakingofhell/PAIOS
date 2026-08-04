@@ -8,6 +8,7 @@ tags:
   - paios/copilot
 related:
   - ../../AGENTS.md
+  - ./README.md
 ---
 Reduce {} to half its length while preserving these elements:
     1. Main ideas and key points

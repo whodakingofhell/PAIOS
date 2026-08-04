@@ -4,6 +4,9 @@ tags:
   - paios/config
 related:
   - "../Automations/AUTOMATION-REGISTRY.md"
+  - "../Automations/MAINTENANCE-DATAVIEWS.md"
+  - "../Metadata-Standards.md"
+  - "../Naming-Conventions.md"
   - "../../AGENTS.md"
 ---
 
@@ -80,3 +83,11 @@ Tags used across PAIOS knowledge files:
 | `paios/security` | Security docs |
 | `paios/qa` | Quality assurance |
 | `paios/moc` | Maps of Content |
+
+## Related System Notes
+
+- [[Metadata-Standards]] — frontmatter fields and allowed values
+- [[Naming-Conventions]] — folder/file/tag naming rules
+- [[../Automations/MAINTENANCE-DATAVIEWS]] — ready-to-run vault-health Dataview queries
+- [[../Automations/AUTOMATION-REGISTRY]] — what runs automatically in the vault
+- [[copilot-custom-prompts]] — Copilot command prompts (Simplify, Summarize, etc.)
