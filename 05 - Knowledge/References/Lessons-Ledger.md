@@ -75,6 +75,10 @@ related:
 - OUI (MAC vendor) lookup turns "unknown device" alarms into a useful list with one offline data file
 - Health scores must explain exactly what is dragging them down, or they are a dashboard lie
 - A local deterministic advisor fallback keeps the UI alive even when no LLM is configured
+- Secure defaults beat optional extras: auto-TLS on any non-loopback bind means an "expose it" mistake can never ship plaintext
+- Off-host the tamper evidence: the chain-tip mirror lives outside the app dir so a DB compromise cannot hide truncation
+- A failing alert subscriber must never block the audit write path — deliver on a daemon thread
+- An idle session is a standing credential: revoke it, don't just reject it
 
 **PhilippineSkyland**
 - Google Search Console integration needs documentation

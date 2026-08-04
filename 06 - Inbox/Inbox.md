@@ -7,6 +7,10 @@ related: ["../AGENTS.md", "../07 - Daily/Daily-Note.md"]
 
 Use this area for unprocessed input.
 
+## Pending Imports
+
+- [[Imports/claude/lessons_learned]] — Claude import awaiting classification
+
 ## Processing
 
 1. Clarify what the item is.

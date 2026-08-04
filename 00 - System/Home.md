@@ -31,4 +31,5 @@ related:
 - [[Naming-Conventions]] — folder, file, and tag naming rules
 - [[Archive-Policy]] — what gets archived and where
 - [[Obsidian-Setup]] — vault configuration, plugins, tags
+- [[Installation/INSTALLATION-REPORT]] — vault install/migration record
 - [[../05 - Knowledge/Knowledge-MOC|Knowledge Map of Content]]

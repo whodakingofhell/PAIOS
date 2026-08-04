@@ -1,4 +1,4 @@
-﻿---
+---
 title: "PAIOS AI Router"
 type: ai-instruction
 status: active

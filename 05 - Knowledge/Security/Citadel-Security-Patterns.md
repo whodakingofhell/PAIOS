@@ -1,8 +1,8 @@
 ---
 title: "Citadel — Reusable Security-Engineering Patterns"
-version: "1.0"
+version: "1.1"
 status: "Reviewed"
-date: "2026-08-02"
+date: "2026-08-05"
 tags:
   - paios/knowledge
   - paios/security
@@ -18,7 +18,7 @@ related:
 
 # Reusable Security-Engineering Patterns (learned from Citadel)
 
-> Proven in the Citadel project (68/68 tests, live 14/14 self-check). These are
+> Proven in the Citadel project (74/74 tests, live 14/14 self-check). These are
 > patterns any future project — web app, API, or desktop tool — can reuse.
 
 ## 1. Fail-Closed Watchdog
@@ -95,6 +95,46 @@ related:
   operator what changed and why.*
 - **Citadel reference:** `citadel/health.py`.
 
+## 9. TLS-by-Default (never a plaintext foot-gun)
+
+- **Pattern:** the HTTP layer already supports TLS; `serve()` wires certs
+  through. Any non-loopback binding without explicit certs auto-generates a
+  self-signed pair (bundled crypto lib), so a "let me expose this" mistake can
+  never ship plaintext.
+- **Rule:** *secure defaults, not optional extras.* Loopback stays HTTP by
+  design; the moment you leave the loop you are HTTPS.
+- **Citadel reference:** `run.py::_ensure_tls`, `citadel/web/server.py`.
+
+## 10. HMAC-Signed Webhook Alerting
+
+- **Pattern:** the single event funnel (`EventBus.record`) fans out to a
+  notifier that forwards sanitized high-severity/lockout/flagged/chain events
+  to a webhook. Body is HMAC-SHA256-signed with a shared secret; delivery runs
+  on a daemon thread so it can never block the audit write path.
+- **Rule:** *alerting turns a "nice log" into an early warning — but a failing
+  subscriber must never break the primary write path.*
+- **Citadel reference:** `citadel/alerts.py`.
+
+## 11. Off-Host Chain-Tip Mirror
+
+- **Pattern:** the HMAC-signed audit chain tip is written to a second path on
+  every append. Truncating or rewriting the DB tail no longer destroys the
+  evidence, because the off-host tip proves what the chain's last entry was.
+- **Rule:** *tamper evidence only survives if it is not stored beside the thing
+  it protects.* Mirror the tip outside the app directory (or a second machine).
+- **Citadel reference:** `citadel/audit.py::_mirror_tip` (`CITADEL_TIP_EXPORT`).
+
+## 12. Offline Breached-Password + Session Idle/Expiry
+
+- **Pattern:** (a) an optional local file of SHA-1 breached-password hashes is
+  checked at set-password time (never sent anywhere); (b) sessions carry an
+  absolute lifetime plus an idle timeout, and idle sessions are *revoked*, not
+  just rejected.
+- **Rule:** *weak-but-technically-valid passwords are still weak; a session that
+  sits idle is a standing credential. Kill it.*
+- **Citadel reference:** `citadel/crypto.py`, `citadel/authn.py`
+  (`CITADEL_BREACH_FILE`, `CITADEL_SESSION_TTL`, `CITADEL_SESSION_IDLE_TTL`).
+
 ## When to Reach for These
 
 | You are building… | Use |
@@ -103,3 +143,6 @@ related:
 | An API or web endpoint | Single-chokepoint WAF + iterative decode + rate limit |
 | A local/desktop tool | Loopback-only, userland, passive network visibility |
 | Anything with an LLM | Deterministic enforcement + advisory-only model |
+| Something you will expose on a network | TLS-by-default + HMAC-signed alerting |
+| Anything with an audit trail | Off-host chain-tip mirror |
+| Anything with user accounts | Offline breached-password + session idle/expiry |

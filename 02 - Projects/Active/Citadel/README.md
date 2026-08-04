@@ -1,8 +1,8 @@
 ---
 title: "Citadel — Self-Monitoring Security Console"
-version: "2.0"
+version: "2.1"
 status: "Active"
-date: "2026-08-02"
+date: "2026-08-05"
 tags:
   - project
   - security
@@ -31,7 +31,7 @@ related:
 | Language | Python 3.14 standard library + `cryptography` |
 | Interface | Web UI + JSON API, loopback-only `http://127.0.0.1:8443` |
 | Deployment | Windows scheduled task `CitadelGuard` via `start-citadel.ps1` |
-| Tests | 68/68 unit/integration passing; live self-check 14/14 controls |
+| Tests | 74/74 unit/integration passing; live self-check 14/14 controls |
 | Code | `C:\Users\My PC\OneDrive\Desktop\AI PROJECTS\citadel\` |
 | GitHub | `https://github.com/whodakingofhell/Citadel` |
 | Docs | `README.md`, `USER_GUIDE.md`, `SECURITY_ANALYSIS.md` (in the repo) |
@@ -57,11 +57,22 @@ related:
 - Monitors **only while its scheduled task is running**; it is not an always-on background service and does not survive a reboot on its own.
 - Writes only inside its own `data/` directory; nothing destructive.
 
-## Current Status (2026-08-02)
+## Current Status (2026-08-05)
 
-- Live-verified end-to-end: passwordless TOTP login, Self-Check button (14/14), AI advisor (local fallback engine), network refresh showing 9 identified devices, audited resolution of all high-severity findings.
-- Guard Health Score: 85/Good (25 audit + 25 integrity + 20 self-check + 15 2FA + 0/15 network until the operator marks their own devices as "mine").
-- Known next steps: mark own devices as recognised to reach 100; roadmap in the repo's `SECURITY_ANALYSIS.md` §8.7 (off-host chain-tip export, TLS-by-default, alerting).
+- **Hardening delivered (benchmarked to OWASP CheatSheets, NIST CSF, CIS):**
+  TLS-by-default for any non-loopback bind (auto self-signed via bundled
+  `cryptography`), HMAC-signed webhook alerting for DEGRADED/lockout/flagged/
+  high-severity events, off-host chain-tip mirror (live in production →
+  `%USERPROFILE%\CitadelTip\chain_tip.sig`), offline breached-password check,
+  and session idle timeout (30 min default). Tests grew 68 → 74.
+- Live-verified end-to-end: passwordless TOTP login, Self-Check button (14/14),
+  AI advisor (local fallback engine), network refresh showing 9 identified
+  devices, audited resolution of all high-severity findings.
+- Guard Health Score: 85/Good (25 audit + 25 integrity + 20 self-check + 15 2FA
+  + 0/15 network until the operator marks their own devices as "mine").
+- Known next steps: mark own devices as recognised to reach 100; remaining
+  roadmap in the repo's `SECURITY_ANALYSIS.md` §8.7 (device baseline, log
+  retention, attack replay theater, score time-series).
 
 ## Knowledge Cross-References
 
