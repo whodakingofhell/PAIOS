@@ -3,5 +3,8 @@
   "dataview",
   "obsidian-git",
   "copilot",
-  "realclaudian"
+  "realclaudian",
+  "claude-code-ide",
+  "open-in-terminal",
+  "claude-sidebar"
 ]
