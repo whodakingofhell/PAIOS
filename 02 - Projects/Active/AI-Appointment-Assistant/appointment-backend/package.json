@@ -1,0 +1,21 @@
+{
+  "name": "appointment-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod",
+    "deploy:staging": "vercel",
+    "db:push": "supabase db push",
+    "db:reset": "supabase db reset",
+    "db:studio": "supabase studio"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "@vercel/analytics": "^2.0.1"
+  },
+  "devDependencies": {
+    "supabase": "^2.109.1",
+    "vercel": "^56.3.1"
+  }
+}

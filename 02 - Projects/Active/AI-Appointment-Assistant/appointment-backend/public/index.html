@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book an Appointment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="https://va.vercel-scripts.com/visualization.js"></script>
+  <style>
+    :root {
+      --bg: #09090b;
+      --card: #18181b;
+      --border: #27272a;
+      --input-bg: #09090b;
+      --text: #fafafa;
+      --text-muted: #a1a1aa;
+      --accent: #3b82f6;
+      --accent-hover: #2563eb;
+      --success: #22c55e;
+      --error: #ef4444;
+      --radius: 10px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+
+    .wrapper { width: 100%; max-width: 480px; padding: 1.5rem; }
+
+    .brand { text-align: center; margin-bottom: 2rem; }
+    .brand-icon { width: 48px; height: 48px; background: var(--accent); border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 0.75rem; }
+    .brand h1 { font-size: 1.25rem; font-weight: 600; letter-spacing: -0.02em; }
+    .brand p { color: var(--text-muted); font-size: 0.8rem; margin-top: 0.25rem; }
+
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 1.75rem; }
+
+    .steps { display: flex; gap: 0.5rem; margin-bottom: 1.75rem; }
+    .step-indicator { flex: 1; height: 3px; border-radius: 2px; background: var(--border); transition: background 0.3s; }
+    .step-indicator.done { background: var(--accent); }
+    .step-indicator.active { background: var(--text); }
+
+    .form-step { display: none; }
+    .form-step.active { display: block; animation: fadeIn 0.2s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+    .step-label { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 1.25rem; }
+
+    .field { margin-bottom: 1rem; }
+    .field label { display: block; font-size: 0.8rem; font-weight: 500; color: var(--text-muted); margin-bottom: 0.4rem; }
+    .field input, .field select, .field textarea {
+      width: 100%; padding: 0.65rem 0.8rem; background: var(--input-bg); border: 1px solid var(--border);
+      border-radius: var(--radius); color: var(--text); font-size: 0.9rem; font-family: inherit;
+      outline: none; transition: border-color 0.2s;
+    }
+    .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--accent); }
+    .field textarea { resize: vertical; min-height: 56px; }
+    .field select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23a1a1aa' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 0.8rem center; padding-right: 2rem; }
+    .field select option { background: var(--card); color: var(--text); }
+    .field-hint { font-size: 0.7rem; color: var(--text-muted); margin-top: 0.3rem; }
+
+    .row { display: flex; gap: 0.75rem; }
+    .row .field { flex: 1; }
+
+    .btn-row { display: flex; gap: 0.6rem; margin-top: 1.25rem; }
+    .btn {
+      flex: 1; padding: 0.7rem; border: none; border-radius: var(--radius);
+      font-size: 0.85rem; font-weight: 500; font-family: inherit; cursor: pointer; transition: all 0.15s;
+    }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-primary:hover { background: var(--accent-hover); }
+    .btn-ghost { background: transparent; color: var(--text-muted); border: 1px solid var(--border); }
+    .btn-ghost:hover { background: var(--card); color: var(--text); }
+    .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+    .spinner { display: inline-block; width: 14px; height: 14px; border: 2px solid rgba(255,255,255,0.3); border-top-color: #fff; border-radius: 50%; animation: spin 0.6s linear infinite; vertical-align: middle; margin-right: 0.4rem; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .summary-table { width: 100%; font-size: 0.85rem; margin-bottom: 1.25rem; }
+    .summary-table tr { border-bottom: 1px solid var(--border); }
+    .summary-table td { padding: 0.55rem 0; }
+    .summary-table td:first-child { color: var(--text-muted); width: 40%; }
+    .summary-table td:last-child { color: var(--text); font-weight: 500; text-align: right; }
+
+    .result-box { padding: 1.5rem; border-radius: var(--radius); text-align: center; }
+    .result-box.success { background: rgba(34,197,94,0.08); border: 1px solid rgba(34,197,94,0.2); }
+    .result-box.error { background: rgba(239,68,68,0.08); border: 1px solid rgba(239,68,68,0.2); }
+    .result-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+    .result-title { font-size: 1rem; font-weight: 600; margin-bottom: 0.35rem; }
+    .result-detail { font-size: 0.8rem; color: var(--text-muted); line-height: 1.5; }
+
+    .footer { text-align: center; margin-top: 1.25rem; font-size: 0.7rem; color: #52525b; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="brand">
+      <div class="brand-icon">&#128197;</div>
+      <h1>Book an Appointment</h1>
+      <p>Remote support &amp; consultation scheduling</p>
+    </div>
+
+    <div class="card">
+      <div class="steps">
+        <div class="step-indicator active" id="si0"></div>
+        <div class="step-indicator" id="si1"></div>
+        <div class="step-indicator" id="si2"></div>
+        <div class="step-indicator" id="si3"></div>
+      </div>
+
+      <form id="form" autocomplete="off">
+
+        <!-- STEP 1: Personal Info -->
+        <div class="form-step active" id="fs0">
+          <div class="step-label">Personal Information</div>
+          <div class="field">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Juan Dela Cruz" required>
+          </div>
+          <div class="row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="you@email.com" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" placeholder="+63 917 123 4567" required>
+            </div>
+          </div>
+          <div class="btn-row">
+            <button type="button" class="btn btn-primary" onclick="next(1)">Continue</button>
+          </div>
+        </div>
+
+        <!-- STEP 2: Subject -->
+        <div class="form-step" id="fs1">
+          <div class="step-label">Appointment Details</div>
+          <div class="field">
+            <label for="subject">What is this about?</label>
+            <select id="subject" required>
+              <option value="" disabled selected>Select a topic</option>
+              <option value="PC / Laptop Support">PC / Laptop Support</option>
+              <option value="TeamViewer Remote Session">TeamViewer Remote Session</option>
+              <option value="AnyDesk Remote Session">AnyDesk Remote Session</option>
+              <option value="Software Installation">Software Installation</option>
+              <option value="Virus / Malware Removal">Virus / Malware Removal</option>
+              <option value="Coaching / Consultation">Coaching / Consultation</option>
+              <option value="General Inquiry">General Inquiry</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="notes">Additional Details</label>
+            <textarea id="notes" placeholder="Briefly describe what you need..."></textarea>
+          </div>
+          <div class="btn-row">
+            <button type="button" class="btn btn-ghost" onclick="next(0)">Back</button>
+            <button type="button" class="btn btn-primary" onclick="next(2)">Continue</button>
+          </div>
+        </div>
+
+        <!-- STEP 3: Schedule -->
+        <div class="form-step" id="fs2">
+          <div class="step-label">Schedule</div>
+          <div class="row">
+            <div class="field">
+              <label for="apptDate">Date</label>
+              <input type="date" id="apptDate" required>
+            </div>
+            <div class="field">
+              <label for="apptTime">Time</label>
+              <input type="time" id="apptTime" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="duration">Session Duration</label>
+            <select id="duration">
+              <option value="10">10 minutes</option>
+              <option value="15" selected>15 minutes</option>
+              <option value="20">20 minutes</option>
+            </select>
+          </div>
+          <div class="field-hint">Working hours: 9:00 AM - 6:00 PM (Mon-Sun, Philippine Time)</div>
+          <div class="btn-row">
+            <button type="button" class="btn btn-ghost" onclick="next(1)">Back</button>
+            <button type="button" class="btn btn-primary" onclick="next(3)">Review</button>
+          </div>
+        </div>
+
+        <!-- STEP 4: Confirm -->
+        <div class="form-step" id="fs3">
+          <div class="step-label">Review &amp; Confirm</div>
+          <table class="summary-table" id="summary"></table>
+          <div class="btn-row">
+            <button type="button" class="btn btn-ghost" onclick="next(2)">Edit</button>
+            <button type="button" class="btn btn-primary" id="confirmBtn" onclick="submit()">Confirm Booking</button>
+          </div>
+        </div>
+
+        <!-- STEP 5: Result -->
+        <div class="form-step" id="fs4">
+          <div id="result"></div>
+          <div class="btn-row" style="margin-top:1rem;">
+            <button type="button" class="btn btn-primary" onclick="resetForm()">Book Another Appointment</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="footer">Powered by Claude AI &amp; OpenCode &middot; Philippine Time (UTC+8)</div>
+  </div>
+
+  <script>
+    var cur = 0;
+    var BYPASS = '5OGeaoJDtE0z2NswaG7rXNFQVBx0lxRn';
+
+    var now = new Date();
+    var minD = new Date(now.getTime() + 2 * 3600000);
+    document.getElementById('apptDate').min = minD.toISOString().split('T')[0];
+
+    function next(n) {
+      if (n === 3) {
+        var f = fields();
+        if (!f.valid) { alert(f.msg); return; }
+        var s = '';
+        s += row('Name', f.name);
+        s += row('Email', f.email);
+        s += row('Phone', f.phone);
+        s += row('Subject', f.subject);
+        if (f.notes) s += row('Details', f.notes);
+        s += row('Date', f.date);
+        s += row('Time', f.time + ' (PH Time)');
+        s += row('Duration', f.duration + ' min');
+        document.getElementById('summary').innerHTML = s;
+      }
+      document.getElementById('fs' + cur).classList.remove('active');
+      document.getElementById('fs' + n).classList.add('active');
+      for (var i = 0; i < 4; i++) {
+        var el = document.getElementById('si' + i);
+        el.classList.remove('done', 'active');
+        if (i < n || (n === 4 && i < 4)) el.classList.add('done');
+        else if (i === n) el.classList.add('active');
+      }
+      cur = n;
+    }
+
+    function row(k, v) { return '<tr><td>' + k + '</td><td>' + v + '</td></tr>'; }
+
+    function fields() {
+      var n = g('fullName'), e = g('email'), p = g('phone'), s = g('subject'), d = g('apptDate'), t = g('apptTime');
+      if (!n || !e || !p || !s || !d || !t) return { valid: false, msg: 'Please fill in all required fields.' };
+      return { valid: true, name: n, email: e, phone: p, subject: s, notes: g('notes'), date: d, time: t, duration: g('duration') || '15' };
+    }
+
+    function g(id) { return document.getElementById(id).value.trim(); }
+
+    function submit() {
+      var btn = document.getElementById('confirmBtn');
+      btn.disabled = true; btn.innerHTML = '<span class="spinner"></span> Booking...';
+      var f = fields();
+
+      fetch('/api/book-appointment', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'x-vercel-protection-bypass': BYPASS },
+        body: JSON.stringify({
+          name: f.name, contact: f.email, phone: f.phone, service: f.subject,
+          date: f.date, time: f.time, timezone: 'Asia/Manila',
+          duration: parseInt(f.duration), notes: f.notes
+        })
+      })
+      .then(function(r) { return r.json(); })
+      .then(function(d) {
+        next(4);
+        if (d.success) {
+          var ref = d.reference || d.booking.id.slice(0, 8).toUpperCase();
+          document.getElementById('result').innerHTML =
+            '<div class="result-box success">' +
+            '<div class="result-icon">&#10003;</div>' +
+            '<div class="result-title">Booking Confirmed</div>' +
+            '<div class="result-detail">' +
+            '<strong style="color:#22c55e;font-size:1.1rem;">Ref: ' + ref + '</strong><br><br>' +
+            f.subject + '<br>' + f.date + ' at ' + f.time + ' (PH Time)<br>' + f.duration + ' minutes<br><br>' +
+            'A confirmation will be sent to ' + f.email + '</div></div>';
+        } else {
+          document.getElementById('result').innerHTML =
+            '<div class="result-box error">' +
+            '<div class="result-icon">&#10007;</div>' +
+            '<div class="result-title">Booking Failed</div>' +
+            '<div class="result-detail">' + (d.error || 'Please try again.') + '</div></div>';
+        }
+        btn.disabled = false; btn.textContent = 'Confirm Booking';
+      })
+      .catch(function() {
+        next(4);
+        document.getElementById('result').innerHTML =
+          '<div class="result-box error"><div class="result-icon">&#10007;</div><div class="result-title">Connection Error</div><div class="result-detail">Please check your internet and try again.</div></div>';
+        btn.disabled = false; btn.textContent = 'Confirm Booking';
+      });
+    }
+
+    function resetForm() {
+      document.getElementById('form').reset();
+      document.getElementById('apptDate').min = minD.toISOString().split('T')[0];
+      next(0);
+    }
+  </script>
+</body>
+</html>

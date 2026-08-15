@@ -1,0 +1,109 @@
+﻿# PAIOS Context Manifest
+# Maps tags to context loading behavior for AI retrieval.
+# AGENTS.md routes here for automated relevance.
+
+manifest_version: 1.0
+updated: 2026-07-29
+
+# --- Tag-to-context mapping ---
+# Each entry defines:
+#   load: files to load when this tag is activated
+#   exclude: patterns to skip
+#   priority: higher = loaded first
+
+contexts:
+
+  - tags: [paios/system]
+    description: Root system config and AI routing
+    load:
+      - "AGENTS.md"
+      - "CONTEXT-POLICY.md"
+      - "me.md"
+      - "ARCHITECTURE.md"
+      - "DESIGN.md"
+      - "00 - System/Config/*"
+    priority: 90
+
+  - tags: [paios/projects, paios/project/ai-appointment-assistant]
+    description: AI Appointment Assistant project context
+    load:
+      - "02 - Projects/Active/AI-Appointment-Assistant/PROJECT-CONTEXT.md"
+      - "02 - Projects/Active/AI-Appointment-Assistant/memory.md"
+      - "02 - Projects/Active/AI-Appointment-Assistant/handoff.md"
+      - "02 - Projects/Active/AI-Appointment-Assistant/Business.md"
+      - "02 - Projects/Active/AI-Appointment-Assistant/README.md"
+      - "02 - Projects/Active/AI-Appointment-Assistant/Vision.md"
+    exclude:
+      - "02 - Projects/Active/AI-Appointment-Assistant/research/**"
+    priority: 80
+
+  - tags: [paios/projects, paios/project/deploy-v2]
+    description: deploy-v2 Next.js project context
+    load:
+      - "02 - Projects/Active/deploy-v2/PROJECT-CONTEXT.md"
+      - "02 - Projects/Active/deploy-v2/README.md"
+      - "02 - Projects/Active/deploy-v2/SYSTEM/MASTER_REFERENCE.md"
+    priority: 80
+
+  - tags: [paios/projects, paios/project/philippineskyland]
+    description: PhilippineSkyland real estate project context
+    load:
+      - "02 - Projects/Active/PhilippineSkyland/PROJECT-CONTEXT.md"
+      - "02 - Projects/Active/PhilippineSkyland/PROJECT-PhilippineSkyland-Architecture.md"
+    priority: 80
+
+  - tags: [paios/business]
+    description: Business operations context
+    load:
+      - "01 - Business/Business-MOC.md"
+    priority: 70
+
+  - tags: [paios/knowledge]
+    description: Core knowledge base
+    load:
+      - "05 - Knowledge/Knowledge-MOC.md"
+      - "05 - Knowledge/References/Lessons-Ledger.md"
+      - "05 - Knowledge/References/Project-Patterns.md"
+    priority: 60
+
+  - tags: [paios/software-development]
+    description: Software engineering knowledge
+    load:
+      - "05 - Knowledge/Software-Development/*"
+    priority: 50
+
+  - tags: [paios/templates]
+    description: Project and review templates
+    load:
+      - "08 - Templates/Project/Project-Folder-Template/*"
+    priority: 40
+
+# --- Context bundles for common task types ---
+bundles:
+
+  quick:
+    label: "Quick task — minimal context"
+    load:
+      - "AGENTS.md"
+      - "me.md"
+
+  active_project:
+    label: "Active project work (default)"
+    load:
+      - "AGENTS.md"
+      - "me.md"
+      - "memory.md"
+      - "handoff.md"
+    then_tag: paios/projects
+
+  new_project:
+    label: "Starting a new project"
+    load:
+      - "AGENTS.md"
+      - "me.md"
+      - "08 - Templates/Project/Project-Folder-Template/PROJECT-CONTEXT.md"
+      - "08 - Templates/Project/Project-Folder-Template/DECISIONS.md"
+      - "02 - Projects/Projects-MOC.md"
+    then_load:
+      - "05 - Knowledge/References/Project-Patterns.md"
+      - "05 - Knowledge/References/Lessons-Ledger.md"
