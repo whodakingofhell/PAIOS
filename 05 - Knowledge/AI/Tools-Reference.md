@@ -41,7 +41,7 @@ Run in terminal (never paste keys in chat):
 hermes secrets set provider_name_api_key YOUR_KEY
 ```
 
-Supported providers: `openrouter`, `anthropic`, `openai`, `deepseek`, `xai`, `zai`, `kimi`, `moonshot`, `google`, `huggingface`, `openode`
+Supported providers: `openrouter`, `anthropic`, `openai`, `deepseek`, `xai`, `zai`, `kimi`, `moonshot`, `google`, `huggingface`, `opencode`
 
 ## Free Model Priority
 
