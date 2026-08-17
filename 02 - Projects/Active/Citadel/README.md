@@ -54,7 +54,7 @@ related:
 ## Safety on This Machine
 
 - Userland Python process, loopback-bound only; **no kernel driver** (unlike Riot Vanguard), no process injection, no network interception, no overlay/input capture — it does not conflict with Steam Guard, Valorant/Vanguard, or any anti-cheat/DRM.
-- Monitors **only while its scheduled task is running**; it is not an always-on background service and does not survive a reboot on its own.
+- Monitors **only while its process is running**; `start-citadel.ps1` makes it **survive reboots**: `CitadelGuard` auto-starts at boot AND logon (`AtStartup` + `AtLogOn`), restarts up to 3× on crash, and the `CitadelWatchdog` task re-arms it every 5 min if `healthz` fails. Logs live in `<repo>\logs\`.
 - Writes only inside its own `data/` directory; nothing destructive.
 
 ## Current Status (2026-08-05)
