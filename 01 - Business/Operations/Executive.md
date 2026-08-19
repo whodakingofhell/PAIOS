@@ -6,7 +6,7 @@ date: "2026-07-18"
 tags: [team, persona, executive]
 owner: "OpenCode"
 canonical: true
-related: "../../01 - Business/Business-MOC.md"
+related: "[[../../01 - Business/Business-MOC.md]]"
 ---
 
 # Executive Team Persona

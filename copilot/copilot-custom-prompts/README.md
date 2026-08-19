@@ -5,8 +5,8 @@ tags:
   - paios/copilot
   - paios/config
 related:
-  - ../00 - System/Config/Obsidian-Setup.md
-  - ../../AGENTS.md
+  - "[[../00 - System/Config/Obsidian-Setup.md]]"
+  - "[[../../AGENTS.md]]"
 copilot-command-context-menu-enabled: true
 copilot-command-slash-enabled: true
 copilot-command-context-menu-order: 10

@@ -3,8 +3,8 @@ tags:
   - paios/projects
   - paios/project/deploy-v2
 related:
-  - "Projects-MOC.md"
-  - "README.md"
+  - "[[Projects-MOC.md]]"
+  - "[[README.md]]"
 ---
 
 # EXPERT CRITIQUES — 15-Discipline Audit Framework

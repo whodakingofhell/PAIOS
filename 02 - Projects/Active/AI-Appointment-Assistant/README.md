@@ -13,9 +13,9 @@ tags:
 owner: "OpenCode"
 canonical: true
 related:
-  - "Business.md"
-  - "Product.md"
-  - "Vision.md"
+  - "[[Business.md]]"
+  - "[[Product.md]]"
+  - "[[Vision.md]]"
 ---
 
 # AI Appointment Assistant — Deployment Guide

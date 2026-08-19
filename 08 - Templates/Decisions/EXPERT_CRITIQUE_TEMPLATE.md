@@ -1,6 +1,6 @@
 ---
 tags: [paios/templates]
-related: "../../00 - System/Config/Obsidian-Setup.md"
+related: "[[../../00 - System/Config/Obsidian-Setup.md]]"
 ---
 
 # EXPERT CRITIQUE LOG

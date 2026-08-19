@@ -1,6 +1,6 @@
 ﻿---
 tags: [paios/personal]
-related: "../05 - Knowledge/Knowledge-MOC.md"
+related: "[[../05 - Knowledge/Knowledge-MOC.md]]"
 ---
 
 # Personal Map of Content

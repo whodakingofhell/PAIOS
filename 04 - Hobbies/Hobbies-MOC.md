@@ -1,6 +1,6 @@
 ﻿---
 tags: [paios/hobbies]
-related: "../05 - Knowledge/Knowledge-MOC.md"
+related: "[[../05 - Knowledge/Knowledge-MOC.md]]"
 ---
 
 # Hobbies Map of Content

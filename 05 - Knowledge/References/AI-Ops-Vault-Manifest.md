@@ -5,7 +5,11 @@ tags:
   - legacy
   - vault-manifest
 related:
-  - "[[../README.md]]"
+  - "[[MASTER_REFERENCE.md]]"
+  - "[[RECOMMENDATIONS.md]]"
+  - "[[EXPERT_CRITIQUES.md]]"
+  - "[[SECURITY_ARCHITECTURE.md]]"
+  - "[[../00 - System/Home.md]]"
 ---
 
 # MANIFEST — Single Source of Truth

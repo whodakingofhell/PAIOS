@@ -7,7 +7,7 @@ tags: [project, lessons, decisions, log]
 owner: "Claude"
 canonical: false
 source: "Claude Anthropic (second-in-command agent)"
-related: "../../02 - Projects/Active/AI-Appointment-Assistant/Lessons-Learned.md"
+related: "[[../../02 - Projects/Active/AI-Appointment-Assistant/Lessons-Learned.md]]"
 ---
 
 # Lessons Learned / Decision Log — Session 1 (2026-07-15)

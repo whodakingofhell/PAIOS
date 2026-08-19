@@ -1,6 +1,6 @@
 ﻿---
 tags: [paios/inbox]
-related: ["../AGENTS.md", "../07 - Daily/Daily-Note.md"]
+related: ["[[../AGENTS.md]]", "[[../07 - Daily/Daily-Note.md]]"]
 ---
 
 # Inbox

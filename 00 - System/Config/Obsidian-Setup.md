@@ -3,11 +3,11 @@ tags:
   - paios/system
   - paios/config
 related:
-  - "../Automations/AUTOMATION-REGISTRY.md"
-  - "../Automations/MAINTENANCE-DATAVIEWS.md"
-  - "../Metadata-Standards.md"
-  - "../Naming-Conventions.md"
-  - "../../AGENTS.md"
+  - "[[../Automations/AUTOMATION-REGISTRY.md]]"
+  - "[[../Automations/MAINTENANCE-DATAVIEWS.md]]"
+  - "[[../Metadata-Standards.md]]"
+  - "[[../Naming-Conventions.md]]"
+  - "[[../Home.md]]"
 ---
 
 # Obsidian Setup Guide
