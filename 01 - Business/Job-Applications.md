@@ -1,6 +1,28 @@
 # Job Applications Tracker
 
-> Track applications, interviews, and follow-ups. Last updated: 2026-08-15
+> Track applications, interviews, and follow-ups. Last updated: 2026-08-24
+> **Toolkit:** `AI-Ops-Vault/00-Inbox/jobs/job-app-toolkit/` — Resume Tailor, Cover Letter Generator, Batch Auto-Apply, LinkedIn Content Generator.
+
+## How to Apply (One-Command Workflow)
+
+```bash
+cd AI-Ops-Vault/00-Inbox/jobs/job-app-toolkit
+
+# 1. Save JD to applications/jds/<company>_<role>.txt
+# 2. Run orchestrator:
+python job_hunt_orchestrator.py \
+  --jd "../applications/jds/techcorp_ai_automation_engineer.txt" \
+  --company "TechCorp Philippines" \
+  --role "AI Automation Engineer" \
+  --platform linkedin \
+  --job-url "https://linkedin.com/jobs/view/123456"
+```
+
+This auto-generates:
+- Tailored resume (`tailored_resumes/`)
+- Cover letter (`cover-letters/`)
+- LinkedIn content (`linkedin-content/`)
+- Application log entry
 
 ## Active Applications
 
