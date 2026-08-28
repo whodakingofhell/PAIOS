@@ -2,6 +2,7 @@
 
 > Track applications, interviews, and follow-ups. Last updated: 2026-08-24
 > **Toolkit:** `AI-Ops-Vault/00-Inbox/jobs/job-app-toolkit/` — Resume Tailor, Cover Letter Generator, Batch Auto-Apply, LinkedIn Content Generator.
+> **Guides:** `AI-Ops-Vault/00-Inbox/jobs/STAR-Stories.md`, `LinkedIn-Profile-Optimization.md`, `Job-Hunt-Routine.md`, `Interview-Questions-Bank.md`, `Skill-Gap-Assessment.md`, `Job-Hunt-Video-Scripts.md`.
 
 ## How to Apply (One-Command Workflow)
 
