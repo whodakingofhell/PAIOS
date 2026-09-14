@@ -1,4 +1,4 @@
-﻿.env
+.env
 .env.*
 !.env.example
 *.key
@@ -21,3 +21,10 @@ node_modules/
 Thumbs.db
 .obsidian/workspace*
 
+state.db*
+*.log
+cache/
+audio_cache/
+image_cache/
+bootstrap-cache/
+*.lock
