@@ -1,0 +1,43 @@
+integrations:
+  hermes-orchestrator:
+    role: orchestrator
+    sync: bidirectional
+    skills: ["github-sync", "paios-core", "web-content"]
+    path: "C:\\Users\\chesr\\paios\\integrations\\hermes-orchestrator"
+  Citadel:
+    role: security
+    sync: push-only
+    skills: ["security-monitor", "threat-detection", "zero-trust"]
+    path: "C:\\Users\\chesr\\paios\\integrations\\Citadel"
+  AI-Ops-Vault:
+    role: secrets
+    sync: bidirectional
+    skills: ["api-key-management", "credential-sync", "encrypted-configs"]
+    path: "C:\\Users\\chesr\\paios\\integrations\\AI-Ops-Vault"
+  evelyn-brain:
+    role: backup
+    sync: push-only
+    skills: ["backup-workflows", "restore-points", "sync-system"]
+    path: "C:\\Users\\chesr\\paios\\integrations\\evelyn-brain"
+  PROMPT-GUIDE-AI:
+    role: prompts
+    sync: bidirectional
+    skills: ["prompt-templates", "prompt-examples", "prompt-library"]
+    path: "C:\\Users\\chesr\\paios\\integrations\\PROMPT-GUIDE-AI"
+
+workflow_sync:
+  enabled: true
+  interval: "30m"
+  targets: ["hermes-orchestrator", "Citadel", "evelyn-brain"]
+  workflows_dir: "C:\\Users\\chesr\\paios\\workflows"
+
+health_checks:
+  enabled: true
+  interval: "15m"
+  checks: ["auth", "skills", "workflows", "api-keys", "repo-status"]
+
+sync_priorities:
+  critical: ["api-keys", "auth"]
+  high: ["skills", "workflows"]
+  medium: ["configs", "documentation"]
+  low: ["logs", "cache"]
