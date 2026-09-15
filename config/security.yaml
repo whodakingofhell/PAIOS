@@ -1,0 +1,36 @@
+security:
+  credential_rotation: 90d
+  threat_monitoring: true
+  firewall_enabled: true
+  backup_testing: true
+  audit_logging: true
+
+network:
+  github_token_scopes: ["gist", "read:org", "repo"]
+  allowed_hosts: ["github.com", "api.openai.com", "generativelanguage.googleapis.com"]
+  blocked_ports: [22, 23, 135, 139, 445]
+
+data_protection:
+  encryption_at_rest: true
+  encryption_in_transit: true
+  access_control: true
+  secure_deletion: true
+
+api_key_management:
+  rotation_schedule: 90d
+  storage_encryption: true
+  backup_count: 3
+  audit_on_access: true
+
+monitoring:
+  threat_detection: true
+  credential_scanning: true
+  network_monitoring: true
+  file_integrity: true
+
+backup:
+  automated: true
+  frequency: "daily"
+  retention: "30d"
+  encryption: true
+  offsite_copy: true
