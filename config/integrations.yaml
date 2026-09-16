@@ -36,6 +36,25 @@ health_checks:
   interval: "15m"
   checks: ["auth", "skills", "workflows", "api-keys", "repo-status"]
 
+coach:
+  role: skills-learning
+  sync: bidirectional
+  skills: ["youtube-content", "composio", "integration-orchestrator"]
+  path: "C:\\Users\\chesr\\paios\\skills\\local\\paios-core\\coach"
+  daemon: true
+  interval_min: 30
+  agents:
+    - hermes-orchestrator
+    - Citadel
+    - AI-Ops-Vault
+    - evelyn-brain
+    - PROMPT-GUIDE-AI
+    - github-sync
+    - skill-ecosystem
+    - integration-orchestrator
+    - system-hardening
+    - composio
+
 sync_priorities:
   critical: ["api-keys", "auth"]
   high: ["skills", "workflows"]
