@@ -178,7 +178,7 @@ def deliver_skill(agent_name, skill_md):
 
 def search_youtube(topic, max_results=3):
     """Search YouTube for tutorials on a topic. Returns list of (title, url)."""
-    # Use web_search to find YouTube tutorials
+    # Try hermes_tools web_search first
     try:
         from hermes_tools import web_search
         results = web_search(f"site:youtube.com {topic}", limit=max_results)
@@ -189,8 +189,27 @@ def search_youtube(topic, max_results=3):
             if "youtube.com" in url or "youtu.be" in url:
                 videos.append((title, url))
         return videos
+    except Exception:
+        pass
+
+    # Fallback: direct curl search via YouTube page scrape
+    try:
+        import urllib.request
+        import re
+        query = topic.replace(" ", "+")
+        url = f"https://www.youtube.com/results?search_query={query}"
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            html = resp.read().decode("utf-8", errors="ignore")
+        videos = []
+        for match in re.finditer(r'href="(/watch\?v=[^"]+)"[^>]*>\s*<h3[^>]*>(.*?)</h3>', html):
+            video_url = "https://www.youtube.com" + match.group(1).split("&")[0]
+            video_title = re.sub(r'<[^>]+>', '', match.group(2)).strip()
+            if video_title and video_url not in [v[1] for v in videos]:
+                videos.append((video_title, video_url))
+        return videos[:max_results]
     except Exception as e:
-        log(f"YouTube search error: {e}")
+        log(f"YouTube search fallback error: {e}")
         return []
 
 
