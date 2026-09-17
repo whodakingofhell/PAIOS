@@ -41,6 +41,20 @@ AGENTS = {
     "composio": {"niche": "integrations", "skills": []},
 }
 
+# Known learning sources (repos to pull skills from)
+LEARNING_SOURCES = {
+    "fleetbase": {
+        "repo": "https://github.com/fleetbase/fleetbase",
+        "niche": "logistics",
+        "agents": ["composio"],
+    },
+    "youtube-shorts-pipeline": {
+        "repo": "https://github.com/rushindrasinha/youtube-shorts-pipeline",
+        "niche": "media-content",
+        "agents": ["composio", "skill-ecosystem", "integration-orchestrator", "evelyn-brain"],
+    },
+}
+
 # Search topics per niche (YouTube search queries)
 SEARCH_QUERIES = {
     "orchestration": ["multi-agent orchestration tutorial", "hermes agent workflow", "AI agent coordination"],
@@ -53,6 +67,8 @@ SEARCH_QUERIES = {
     "cross-bot-sync": ["multi-agent communication", "bot workflow sync", "agent team coordination"],
     "security-fixes": ["system hardening tutorial", "security audit automation", "permanent security fixes"],
     "integrations": ["Composio tutorial", "AI integrations platform", "agent tool integration"],
+    "logistics": ["Fleetbase logistics tutorial", "supply chain OS", "fleet management API"],
+    "media-content": ["YouTube Shorts pipeline tutorial", "AI content engine", "automated YouTube upload"],
 }
 
 
@@ -213,11 +229,48 @@ def search_youtube(topic, max_results=3):
         return []
 
 
+def process_learning_source(source_name, source_info):
+    """Process a known learning source (repo) and deliver skills to its agents."""
+    repo = source_info["repo"]
+    niche = source_info["niche"]
+    target_agents = source_info["agents"]
+    log(f"Processing learning source: {source_name} ({repo})")
+
+    # Search web for the source's tools/features
+    try:
+        from hermes_tools import web_search
+        results = web_search(f"{source_name} tools features API", limit=3)
+        pages = results.get("data", {}).get("web", [])
+    except Exception:
+        pages = []
+
+    skills_delivered = 0
+    for page in pages[:2]:
+        title = page.get("title", "")
+        url = page.get("url", "")
+        log(f"  Extracting from: {title}")
+
+        # Extract skills from the page content
+        skills = extract_skills_from_transcript(f"{title}\n{url}", niche)
+        for skill_data in skills:
+            skill_md = generate_skill_md(skill_data)
+            for agent_name in target_agents:
+                deliver_skill(agent_name, skill_md)
+                skills_delivered += 1
+
+    return skills_delivered
+
+
 def learn_cycle():
     """Run one full learning cycle: search, fetch, extract, distribute."""
     log("=== Coach learning cycle started ===")
     skills_delivered = 0
 
+    # Process known learning sources first
+    for source_name, source_info in LEARNING_SOURCES.items():
+        skills_delivered += process_learning_source(source_name, source_info)
+
+    # Then search YouTube for each agent's niche
     for agent_name, agent_info in AGENTS.items():
         niche = agent_info["niche"]
         queries = SEARCH_QUERIES.get(niche, [niche])
