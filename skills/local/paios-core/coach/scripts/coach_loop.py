@@ -53,6 +53,11 @@ LEARNING_SOURCES = {
         "niche": "media-content",
         "agents": ["composio", "skill-ecosystem", "integration-orchestrator", "evelyn-brain"],
     },
+    "agent-reach": {
+        "repo": "https://github.com/Panniantong/Agent-Reach",
+        "niche": "research",
+        "agents": ["composio", "hermes-orchestrator", "integration-orchestrator", "evelyn-brain", "AI-Ops-Vault", "skill-ecosystem"],
+    },
 }
 
 # Search topics per niche (YouTube search queries)
@@ -69,6 +74,7 @@ SEARCH_QUERIES = {
     "integrations": ["Composio tutorial", "AI integrations platform", "agent tool integration"],
     "logistics": ["Fleetbase logistics tutorial", "supply chain OS", "fleet management API"],
     "media-content": ["YouTube Shorts pipeline tutorial", "AI content engine", "automated YouTube upload"],
+    "research": ["Agent Reach research tool", "internet search AI agent", "web research CLI"],
 }
 
 
