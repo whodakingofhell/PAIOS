@@ -10,23 +10,13 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-# Ensure sibling modules (_hermes_home) are importable when run standalone.
-_SCRIPTS_DIR = str(Path(__file__).resolve().parent)
-if _SCRIPTS_DIR not in sys.path:
-    sys.path.insert(0, _SCRIPTS_DIR)
 
-from _hermes_home import get_hermes_home
+def get_hermes_home() -> Path:
+    return Path(os.environ.get("HERMES_HOME", Path.home() / ".hermes"))
 
 
 def get_token_path() -> Path:
     return get_hermes_home() / "google_token.json"
-
-
-def _normalize_authorized_user_payload(payload: dict) -> dict:
-    normalized = dict(payload)
-    if not normalized.get("type"):
-        normalized["type"] = "authorized_user"
-    return normalized
 
 
 def refresh_token(token_data: dict) -> dict:
@@ -46,27 +36,17 @@ def refresh_token(token_data: dict) -> dict:
         "client_id": token_data["client_id"],
         "client_secret": token_data["client_secret"],
         "refresh_token": token_data["refresh_token"],
-        # The refresh token goes in BOTH the body and the ``x-nous-refresh-token`` header. Portal's token
-        # endpoint requires ``refresh_token`` in the body (its request schema rejects a header-only request
-        # as ``invalid_request``), and additionally reconciles the header against the body — sending both
-        # lets Portal keep the value out of body-access-logs while still satisfying the schema. The header
-        # name must match Portal's ``REFRESH_TOKEN_HEADER`` exactly (``x-nous-refresh- token``); any other
-        # name is silently ignored. (Verified against the NAS #293 preview deploy: header-only → 400
-        # invalid_request; body → accepted.)
         "grant_type": "refresh_token",
     }).encode()
 
     req = urllib.request.Request(token_data["token_uri"], data=params)
     try:
-        with urllib.request.urlopen(req, timeout=15) as resp:
+        with urllib.request.urlopen(req) as resp:
             result = json.loads(resp.read())
     except urllib.error.HTTPError as e:
         body = e.read().decode("utf-8", errors="replace")
         print(f"ERROR: Token refresh failed (HTTP {e.code}): {body}", file=sys.stderr)
         print("Re-run setup.py to re-authenticate.", file=sys.stderr)
-        sys.exit(1)
-    except (urllib.error.URLError, TimeoutError) as e:
-        print(f"ERROR: Token refresh failed (network): {e}", file=sys.stderr)
         sys.exit(1)
 
     token_data["token"] = result["access_token"]
@@ -75,9 +55,7 @@ def refresh_token(token_data: dict) -> dict:
         tz=timezone.utc,
     ).isoformat()
 
-    get_token_path().write_text(
-        json.dumps(_normalize_authorized_user_payload(token_data), indent=2), encoding="utf-8"
-    )
+    get_token_path().write_text(json.dumps(token_data, indent=2))
     return token_data
 
 
@@ -88,7 +66,7 @@ def get_valid_token() -> str:
         print("ERROR: No Google token found. Run setup.py --auth-url first.", file=sys.stderr)
         sys.exit(1)
 
-    token_data = json.loads(token_path.read_text(encoding="utf-8"))
+    token_data = json.loads(token_path.read_text())
 
     expiry = token_data.get("expiry", "")
     if expiry:
