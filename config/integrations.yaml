@@ -55,6 +55,13 @@ coach:
     - system-hardening
     - composio
 
+fleetbase:
+  role: logistics
+  sync: bidirectional
+  skills: ["fleetbase-logistics", "composio"]
+  path: "C:\\Users\\chesr\\paios\\integrations\\fleetbase"
+  repo: "https://github.com/fleetbase/fleetbase"
+
 sync_priorities:
   critical: ["api-keys", "auth"]
   high: ["skills", "workflows"]
